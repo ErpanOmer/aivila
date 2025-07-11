@@ -6,4 +6,5 @@ package-lock.json
 backup.js
 README.md
 tailwind.config.js
+config.yml
 ./tailwind.css
