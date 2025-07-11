@@ -12,7 +12,7 @@
     "theme-dev": "theme watch --password=shptka_6d21633b10b1de3670580bf0678081e0 --store=0e8e11-hm.myshopify.com --themeid=179043041576",
     "pull": "theme get --password=shptka_6d21633b10b1de3670580bf0678081e0 --store=0e8e11-hm.myshopify.com --live",
     "list": "theme get --password=shptka_6d21633b10b1de3670580bf0678081e0 --store=0e8e11-hm.myshopify.com --list",
-    "push": "git push origin master -f",
+    "push": "git push origin main -f",
     "backup": "node backup.js",
     "shopify": "shopify"
   },
