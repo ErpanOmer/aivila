@@ -1,0 +1,9 @@
+node_modules
+.npmrc
+.gitignore
+package.json
+package-lock.json
+backup.js
+README.md
+tailwind.config.js
+./tailwind.css

@@ -1,0 +1,37 @@
+{
+  "name": "urtopia-us",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "store": "0e8e11-hm.myshopify.com",
+  "type": "module",
+  "scripts": {
+    "css": "npx tailwindcss -i ./tailwind.css -o ./assets/tailwind.min.css --minify",
+    "watch-css": "npx tailwindcss -i ./tailwind.css -o ./assets/tailwind.min.css --watch --minify",
+    "dev": "run-p watch-css theme-dev",
+    "theme-dev": "theme watch --password=shptka_6d21633b10b1de3670580bf0678081e0 --store=0e8e11-hm.myshopify.com --themeid=179043041576",
+    "pull": "theme get --password=shptka_6d21633b10b1de3670580bf0678081e0 --store=0e8e11-hm.myshopify.com --live",
+    "list": "theme get --password=shptka_6d21633b10b1de3670580bf0678081e0 --store=0e8e11-hm.myshopify.com --list",
+    "push": "git push origin master -f",
+    "backup": "node backup.js",
+    "shopify": "shopify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErpanOmer/urtopia-us.git"
+  },
+  "author": "ErpanOmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErpanOmer/urtopia-us/issues"
+  },
+  "homepage": "https://github.com/ErpanOmer/urtopia-us#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
