@@ -1,0 +1,152 @@
+/* 尺寸级别名称定义：
+    --size-xs（特小 / extra small）
+    --size-sm（小 / small）
+    --size-md（中 / medium）
+    --size-lg（大 / large）
+    --size-xl（特大 / extra large）
+    --size-xxl（超特大 / extra extra large）
+*/
+
+* {
+    transition: font-size 0.3s;
+}
+
+:root {
+    --title-font-family: Montserrat, sans-serif;
+    --content-font-family: Poppins, sans-serif;
+
+    /* 标题 */
+    --title-font-size-xss: 20px;
+    --title-font-size-xs: 30px;
+    --title-font-size-sm: 32px;
+    --title-font-size-md: 36px;
+    --title-font-size-lg: 42px;
+    --title-font-size-xl: 48px;
+    --title-font-size-xxl: 60px;
+
+    /* 内容 */
+    --content-font-size-xs: 12px;
+    --content-font-size-sm: 14px;
+    --content-font-size-md: 16px;
+    --content-font-size-lg: 20px;
+    --content-font-size-xl: 24px;
+    --content-font-size-xxl: 26px;
+}
+
+@media (max-width: 1580px) {
+    :root {
+        /* 标题 */
+        --title-font-size-xss: 18px;
+        --title-font-size-xs: 28px;
+        --title-font-size-sm: 30px;
+        --title-font-size-md: 32px;
+        --title-font-size-lg: 36px;
+        --title-font-size-xl: 42px;
+        --title-font-size-xxl: 48px;
+
+        /* 内容 */
+        --content-font-size-xs: 14px;
+        --content-font-size-sm: 14px;
+        --content-font-size-md: 15px;
+        --content-font-size-lg: 18px;
+        --content-font-size-xl: 20px;
+        --content-font-size-xxl: 22px;
+    }
+}
+
+@media (max-width: 1280px) {
+    :root {
+        /* 标题 */
+        --title-font-size-xss: 16px;
+        --title-font-size-xs: 24px;
+        --title-font-size-sm: 26px;
+        --title-font-size-md: 28px;
+        --title-font-size-lg: 32px;
+        --title-font-size-xl: 36px;
+        --title-font-size-xxl: 42px;
+
+        /* 内容 */
+        --content-font-size-xs: 14px;
+        --content-font-size-sm: 14px;
+        --content-font-size-md: 14px;
+        --content-font-size-lg: 16px;
+        --content-font-size-xl: 18px;
+        --content-font-size-xxl: 20px;
+    }
+}
+
+/* 标题快速类 */
+.tfs-xss {
+    font-size: var(--title-font-size-xss);
+}
+
+.tfs-xs {
+    font-size: var(--title-font-size-xs);
+}
+
+.tfs-sm {
+    font-size: var(--title-font-size-sm);
+}
+
+.tfs-md {
+    font-size: var(--title-font-size-md);
+}
+
+.tfs-lg {
+    font-size: var(--title-font-size-lg);
+}
+
+.tfs-xl {
+    font-size: var(--title-font-size-xl);
+}
+
+.tfs-xxl {
+    font-size: var(--title-font-size-xxl);
+}
+
+/* 内容快速类 */
+.cfs-xs {
+    font-size: var(--content-font-size-xs);
+}
+
+.cfs-sm {
+    font-size: var(--content-font-size-sm);
+}
+
+.cfs-md {
+    font-size: var(--content-font-size-md);
+}
+
+.cfs-lg {
+    font-size: var(--content-font-size-lg);
+}
+
+.cfs-xl {
+    font-size: var(--content-font-size-xl);
+}
+
+.cfs-xxl {
+    font-size: var(--content-font-size-xxl);
+}
+
+/* 字重快速类 */
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-extra-bold {
+    font-weight: 800;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+/* 字体快速类 */
+.tff {
+    font-family: var(--title-font-family);
+}
+
+.cff {
+    font-family: var(--content-font-family);
+}

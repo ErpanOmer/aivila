@@ -1,0 +1,73 @@
+body,.section_view{
+  background-color: #000;
+}
+
+
+.subscribe {
+    display: flex;
+    margin-top: 16px;
+    width: 50%;
+    justify-content: space-between;
+}
+.subscribe input {
+    background-color: #fff;
+    border-radius: clamp(21.6px, 3vw, 38.4px);
+    padding: 1.2% 5%;
+    flex: 1;
+    margin-right: 12px;
+    line-height: 1.5;
+    font-size: clamp(12px, 1.25vw, 16px);
+    color: #000;
+    border: 2px solid transparent;
+    outline: none;
+    transition: all 0.3s ease;
+    /* 添加内部阴影效果 */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 输入框获得焦点时的样式 */
+.subscribe input:focus {
+    border-color: #097FC7;
+    box-shadow: 0 0 5px rgba(9,127,199,0.3);
+}
+
+/* 输入框hover效果 */
+.subscribe input:hover {
+    background-color: #f8f8f8;
+}
+
+/* placeholder文本样式 */
+.subscribe input::placeholder {
+    color: #999;
+    opacity: 0.8;
+}
+/* 背景渐变 从#097FC7 到#01C8E2 */
+.subscribe button {
+    background: linear-gradient(to right, #097FC7, #01C8E2);
+    border-radius: clamp(21.6px, 3vw, 38.4px);
+    width: 23%;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 16px;
+    line-height: 0;
+}
+
+.subscribe button:hover{
+    filter: brightness(0.8);
+}
+
+.email_error_tips {
+    display: none;
+    margin-top: 8px;
+    color: rgb(255, 61, 61);
+    font-weight: bold;
+    font-size: 16px;
+    /* 添加震动动画 */
+    animation: shake 0.5s ease-in-out;
+}

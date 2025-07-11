@@ -1,0 +1,56 @@
+:root {
+    --title-font-family: 'Montserrat', sans-serif;
+    --content-font-family: 'Poppins', sans-serif;
+}
+
+/* 字重快速类 */
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-extra-bold {
+    font-weight: 800 !important;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-light {
+    font-weight: 300 !important;
+}
+
+.fw-extra-light {
+    font-weight: 200 !important;
+}
+
+/* 字体快速类 */
+.tff {
+    font-family: var(--title-font-family);
+}
+
+.cff {
+    font-family: var(--content-font-family);
+}
+
+
+._size_title1 {
+    font-size: 30px;
+}
+
+._size_title2 {
+    font-size: 20px;
+}
+
+._size_desc1 {
+    font-size: 17px;
+}
+
+._size_desc2 {
+    font-size: 14px;
+}
+
+._size_btn {
+    font-size: 12px;
+}

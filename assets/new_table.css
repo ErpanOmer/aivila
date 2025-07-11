@@ -1,0 +1,423 @@
+/* 基础布局 */
+.table-wrapper {
+    position: relative;
+    padding: var(--padding_desktop);
+    border-radius: var(--borderRadius);
+    --size: 1920;
+}
+
+
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.table-wrapper table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--background-color);
+}
+
+.table-wrapper td,
+.table-wrapper th {
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* 对齐方式 */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.table-cell {
+    vertical-align: middle;
+}
+
+.cell-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.thead {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+    padding-top: calc(27 / 1920 * 100vw);
+    background-color: var(--background-color);
+}
+
+
+/* 桌面端样式 */
+@media (min-width: 769px) {
+    .showpc {
+        display: contents;
+    }
+
+    .dropdown-button {
+        display: none;
+    }
+
+    .text-desktop-left td,
+    .text-desktop-left th {
+        text-align: left;
+    }
+
+    .text-desktop-center td,
+    .text-desktop-center th {
+        text-align: center;
+    }
+
+    .text-desktop-center .cell-content {
+        align-items: center;
+    }
+
+    .text-desktop-right td,
+    .text-desktop-right th {
+        text-align: right;
+    }
+
+    .text-desktop-right .cell-content {
+        align-items: flex-end;
+    }
+
+    /* 第一列对齐 */
+    .first-column-desktop-left tr td:first-child,
+    .first-column-desktop-left tr th:first-child {
+        text-align: left;
+    }
+
+    .first-column-desktop-left tr td:first-child .cell-content {
+        align-items: flex-start;
+    }
+
+    .first-column-desktop-center tr td:first-child,
+    .first-column-desktop-center tr th:first-child {
+        text-align: center;
+    }
+
+    .first-column-desktop-right tr td:first-child,
+    .first-column-desktop-right tr th:first-child {
+        text-align: right;
+    }
+
+    .first-column-desktop-right td:first-child .cell-content {
+        align-items: flex-end;
+    }
+
+    .column-switch {
+        top: calc(32 / 1920 * 100vw);
+        right: calc(121 / 1920 * 100vw);
+    }
+
+    .marginBottom {
+        margin-bottom: calc(29 / 1920 * 100vw);
+    }
+
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    .thead {
+        padding-top: calc(10 / 375 * 100vw);
+    }
+
+    .column-switch {
+        top: calc(21 / 375 * 100vw);
+        right: calc(21 / 375 * 100vw);
+    }
+
+    .table-wrapper {
+        padding: var(--padding_mobile);
+        --size: 375
+    }
+
+    .marginBottom {
+        margin-bottom: calc(11 / 375 * 100vw);
+    }
+
+    .text-mobile-left td,
+    .text-mobile-left th {
+        text-align: left;
+    }
+
+    .text-mobile-center td,
+    .text-mobile-center th {
+        text-align: center;
+    }
+
+    .text-mobile-center .cell-content {
+        align-items: center;
+    }
+
+    .text-mobile-right td,
+    .text-mobile-right th {
+        text-align: right;
+    }
+
+    .text-mobile-right .cell-content {
+        align-items: flex-end;
+    }
+
+    /* 第一列显示控制 */
+    .hide-first-column-mobile tr td:first-child,
+    .hide-first-column-mobile tr th:first-child {
+        display: none;
+    }
+
+    .desktop-only,
+    .hidden-row {
+        display: none !important;
+    }
+}
+
+/* 列切换按钮样式 */
+.column-switch {
+    position: absolute;
+
+}
+
+.switch-button,
+.dropdown-button {
+    z-index: 1000;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* .switch-button:hover,
+.dropdown-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+} */
+
+/* 下拉菜单样式 */
+.dropdown-content {
+    position: absolute;
+    margin-top: calc(12 / 375 * 100vw);
+    top: 100%;
+    right: calc(-10 / 375 * 100vw);
+    ;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: calc(10 / 375 * 100vw);
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    z-index: 1001;
+    min-width: calc(146 / 375 * 100vw);
+}
+
+.dropdown-option {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: calc(14 / 375 * 100vw);
+    padding: calc(13 / 375 * 100vw) calc(30 / 375 * 100vw);
+    line-height: 1;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+
+.dropdown-option:first-child {
+    border-top-left-radius: calc(10 / 375 * 100vw);
+    border-top-right-radius: calc(10 / 375 * 100vw);
+}
+
+.dropdown-option:last-child {
+    border-bottom-left-radius: calc(10 / 375 * 100vw);
+    border-bottom-right-radius: calc(10 / 375 * 100vw);
+    border: none;
+}
+
+
+.table-wrapper .dropdown-option .checkmark {
+    position: absolute;
+    top: calc(14 / 375 * 100vw);
+    left: calc(10 / 375 * 100vw);
+    ;
+    border: none;
+    width: calc(12 / 375 * 100vw);
+}
+
+/* 固定表头 */
+.table-fixed-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: inherit;
+}
+
+/* 固定列 */
+.table-fixed-column {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: inherit;
+}
+
+/* 可调整列宽 */
+.resizable-column {
+    position: relative;
+}
+
+.resizable-column::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    cursor: col-resize;
+}
+
+/* 表格内容样式 */
+.table-cell-text,
+.table-header {
+    word-break: break-word;
+    /* font-weight: bold; */
+    font-size: calc(var(--fontSizeBlod) / var(--size) * 100vw);
+    color: var(--text_color);
+    box-sizing: border-box;
+}
+
+.table-cell-rich-text {
+    font-size: calc(var(--fontSizesmall) / var(--size) * 100vw);
+    color: var(--rich_text_color);
+    height: calc(var(--fontSizesmall) / var(--size) * 100vw);
+}
+
+.table-cell-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.table-wrapper {
+    border-color: rgba(0, 0, 0, 0.1);
+
+}
+
+/* 斑马纹样式 */
+.table-striped tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* 悬停效果 */
+.tr-hover:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 隐藏的列 */
+.hidden-column {
+    display: none !important;
+}
+
+.switch-button,
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: calc(40 / var(--size) * 100vw);
+    height: calc(40 / var(--size) * 100vw);
+}
+
+.switch-button {
+    width: calc(32 / 1920 * 100vw);
+    height: calc(32 / 1920 * 100vw);
+    border-radius: 50%;
+}
+
+.dropdown-button {
+    width: calc(17 / var(--size) * 100vw);
+    height: calc(17 / var(--size) * 100vw);
+    background: #7A7A7B;
+    border-radius: 50%;
+}
+
+.switch-button:hover,
+.dropdown-button:hover {
+
+    border-radius: 50%;
+}
+
+/* 确保图标可以正确显示和点击 */
+.switch-button svg,
+.dropdown-button svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    pointer-events: none;
+    /* 防止SVG干扰点击事件 */
+}
+
+.table-wrapper thead th {
+    position: relative;
+    transition: transform 0.3s ease;
+    background-color: var(--background-color);
+}
+
+/* 即将离开的列 */
+.leaving {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* 新进入的列 */
+.entering {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* 正在滑动的列 */
+.sliding {
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+/* 隐藏列 */
+.hidden-column {
+    display: none;
+}
+
+/* 表格内容部分不需要动画 */
+.table-wrapper tbody td {
+    transition: none;
+    position: relative;
+}
+
+.PoAbsolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.border-b {
+    border-style: solid;
+    border-width: 0;
+    border-color: rgba(26, 26, 26, 0.12);
+    border-bottom-width: 1px;
+}

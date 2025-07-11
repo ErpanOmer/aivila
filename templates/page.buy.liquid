@@ -1,0 +1,678 @@
+<!-- templates/page.blank.liquid -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+			* {
+			  margin: 0;
+			  padding: 0;
+			  box-sizing: border-box;
+			}
+			
+			html, body {
+			  width: 100%;
+			  overflow-x: hidden;
+			}
+
+			@keyframes fadeInUp {
+			  from {
+			    opacity: 0;
+			    transform: translateY(20px);
+			  }
+			  to {
+			    opacity: 1;
+			    transform: translateY(0);
+			  }
+			}
+			.root {
+			  width: 100%;
+			  position: relative;
+			}
+
+			/* 电脑端（大于等于 768px） */
+			@media (min-width: 768px) {
+			  body {
+			    background-color: #ffffff;
+			    font-size: 0;
+			  }
+			  .background-image {
+			    width: 100%;
+			    height: 100vh;
+			    -o-object-fit: cover;
+			       object-fit: cover;
+			    -o-object-position: center;
+			       object-position: center;
+			  }
+			  .image-mask {
+			    width: 100%;
+			    height: 100vh;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    background-color: rgba(0, 0, 0, 0.4);
+			  }
+			  .container {
+			    padding: 0 5% 32px 5%;
+			    box-sizing: border-box;
+			    margin: 0 auto;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100vh;
+                overflow: auto;
+			    z-index: 1;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			  }
+			  .container .content {
+			    width: 100%;
+			    height: 100vh;
+			    font-size: 16px;
+			    color: white;
+			    flex: 1;
+			  }
+			  .container .content .buy {
+			    padding-top: 64px;
+			    animation: fadeInUp 0.8s ease-out;
+			  }
+			  .container .content .buy .logo {
+			    animation: fadeInUp 0.8s ease-out;
+			  }
+			  .container .content .buy .logo img {
+			    width: 189px;
+			  }
+			  .container .content .buy .title {
+			    font-weight: bold;
+			    font-size: 36px;
+			    margin: 12px 0;
+			    animation: fadeInUp 0.8s ease-out 0.2s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .content .buy .desc,
+			  .container .content .buy .todo {
+			    font-weight: lighter;
+			    font-size: 20px;
+			    word-wrap: break-word;
+			    overflow-wrap: break-word;
+			  }
+			  .container .content .buy .desc {
+			    margin: 18px 0;
+			    animation: fadeInUp 0.8s ease-out 0.4s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .content .buy .todo {
+			    animation: fadeInUp 0.8s ease-out 0.6s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .content .buy .todo .todo-item {
+			    margin: 4px 0;
+			  }
+			  .container .content .buy .buy-btn {
+			    border: none;
+			    list-style: none;
+			    color: #fff;
+			    background-color: #fd4b17;
+			    border-radius: 100px;
+			    padding: 10px 40px;
+			    margin-top: 32px;
+			    font-size: 30px;
+			    font-weight: bold;
+			    letter-spacing: 0px;
+			    line-height: 40px;
+			    text-align: center;
+			    cursor: pointer;
+			    transition: 0.3s;
+			    animation: fadeInUp 0.8s ease-out 0.8s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+                display: block;
+			    width: 100%;
+			    max-width: 400px;
+			  }
+			  .container .content .buy .buy-btn:hover {
+			    background-color: #ff7950;
+			  }
+			  .container .content .service {
+			    display: flex;
+			    gap: 32px;
+			    margin-top: 32px;
+			    animation: fadeInUp 0.8s ease-out 1s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .content .service .service-item {
+			    display: flex;
+			    flex-direction: column;
+			    flex: 1;
+			  }
+			  .container .content .service .service-item .icon {
+			    height: 42px;
+			    width: 42px;
+			  }
+			  .container .content .service .service-item .title {
+			    font-size: 20px;
+			    font-weight: bold;
+			    line-height: 1.2;
+			    margin-bottom: 8px;
+                margin-top:0;
+			  }
+			  .container .content .service .service-item .desc {
+			    font-size: 14px;
+			    font-weight: lighter;
+			    word-wrap: break-word;
+			    overflow-wrap: break-word;
+			  }
+			  .container .cover {
+			    flex: 1;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    animation: fadeInUp 0.8s ease-out 1.2s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .cover .product {
+			    height: 400px;
+			    width: 400px;
+			    border-radius: 32px;
+			  }
+              .container .cover .product img{
+                width: 100%;
+              }
+			  .container .cover .info {
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    font-size: 36px;
+			    color: #fff;
+			    margin-top: 32px;
+			  }
+			  .container .cover .info .price {
+			    width: 100%;
+			    max-width: 560px;
+			    min-height: 91px;
+			    opacity: 1;
+			    border-radius: 30px;
+			    background: linear-gradient(135deg, rgb(1, 200, 226) 0%, rgb(9, 127, 199) 100%);
+			    display: flex;
+			    flex-wrap: wrap;
+			    align-items: center;
+			    justify-content: center;
+			    line-height: 1.2;
+			    padding: 15px 32px;
+			    gap: 5px 15px;
+			  }
+			  .container .cover .info .vip-price {
+			    margin-top: 8px;
+			  }
+			  .container .cover .info .raw-price {
+			    color: rgb(227, 227, 227);
+			    text-decoration: line-through;
+			  }
+			  .container .cover .info span {
+			    display: inline-block;
+			    margin: 0 8px;
+			    font-weight: bold;
+			    font-size: 44px;
+			  }
+			}
+			/* 平板和手机端（小于 768px） */
+			@media (max-width: 767px) {
+			  body {
+			    background-color: #ffffff;
+			    font-size: 16px;
+			  }
+			  .background-image {
+			    width: 100%;
+			    height: 250px;
+			    -o-object-fit: cover;
+			       object-fit: cover;
+			    -o-object-position: center;
+			       object-position: center;
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    z-index: 0;
+			  }
+			  .image-mask {
+			    width: 100%;
+			    height: 250px;
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    background-color: rgba(0, 0, 0, 0.4);
+			    z-index: 0;
+			  }
+			  .container {
+			    padding: 0 20px 30px;
+			    box-sizing: border-box;
+			    margin: 0 auto;
+			    width: 100%;
+			    height: auto;
+			    position: relative;
+			    z-index: 1;
+			    display: flex;
+			    flex-direction: column;
+			  }
+			  .container .content {
+			    width: 100%;
+			    height: auto;
+			    font-size: 16px;
+			    color: #333;
+			    order: 2;
+			    margin-top: 20px;
+			    background-color: #ffffff;
+			    border-radius: 15px 15px 0 0;
+			    padding: 20px 15px;
+			    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+			  }
+			  .container .cover {
+			    width: 100%;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    margin-top: 270px;
+			    margin-bottom: 0;
+			    order: 1;
+			    animation: fadeInUp 0.8s ease-out 0.2s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			    background-color: rgba(255, 255, 255, 0.9);
+			    padding: 20px 15px;
+			    border-radius: 15px;
+			  }
+			  .container .cover .product {
+			    height: 250px;
+			    border-radius: 24px;
+			    overflow: hidden;
+			  }
+			  .container .cover .product img {
+			    width: 100%;
+			    height: 100%;
+			    object-fit: cover;
+			  }
+			  .container .cover .info {
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    font-size: 24px;
+			    color: #333;
+			    margin-top: 20px;
+			    width: 100%;
+			  }
+			  .container .cover .info .price {
+			    width: 100%;
+			    max-width: 400px;
+			    min-height: 70px;
+			    opacity: 1;
+			    border-radius: 20px;
+			    background: linear-gradient(135deg, rgb(1, 200, 226) 0%, rgb(9, 127, 199) 100%);
+			    display: flex;
+			    flex-wrap: wrap;
+			    align-items: center;
+			    justify-content: center;
+			    line-height: 1.2;
+			    color: #fff;
+			    padding: 10px;
+			    gap: 5px 10px;
+			  }
+			  .container .cover .info .vip-price {
+			    margin-top: 8px;
+			  }
+			  .container .cover .info .raw-price {
+			    color: rgba(150, 150, 150, 1);
+			    text-decoration: line-through;
+			  }
+			  .container .cover .info span {
+			    display: inline-block;
+			    margin: 0 6px;
+			    font-weight: bold;
+			    font-size: 32px;
+			  }
+			  .container .content .buy {
+			    padding-top: 20px;
+			    animation: fadeInUp 0.8s ease-out 0.4s;
+			  }
+			  .container .content .buy .logo {
+			    animation: fadeInUp 0.8s ease-out 0.4s;
+			  }
+			  .container .content .buy .logo img {
+			    width: 150px;
+			  }
+			  .container .content .buy .title {
+			    font-weight: bold;
+			    font-size: 28px;
+			    margin: 12px 0;
+			    animation: fadeInUp 0.8s ease-out 0.6s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			    color: #333;
+                line-height: 1.1;
+			  }
+			  .container .content .buy .desc,
+			  .container .content .buy .todo {
+			    font-weight: lighter;
+			    font-size: 18px;
+			    color: #333;
+                line-height: 1.3;
+			  }
+			  .container .content .buy .desc {
+			    margin: 18px 0;
+			    animation: fadeInUp 0.8s ease-out 0.8s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .content .buy .todo {
+			    animation: fadeInUp 0.8s ease-out 1s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .content .buy .todo .todo-item {
+			    margin: 8px 0;
+			    word-wrap: break-word;
+			    overflow-wrap: break-word;
+			  }
+			  .container .content .buy .buy-btn {
+			    border: none;
+			    list-style: none;
+			    color: #fff;
+			    background-color: #fd4b17;
+			    border-radius: 100px;
+			    padding: 10px 20px;
+			    margin-top: 24px;
+			    font-size: 22px;
+			    font-weight: bold;
+			    letter-spacing: 0px;
+			    line-height: 32px;
+			    text-align: center;
+			    cursor: pointer;
+			    transition: 0.3s;
+			    animation: fadeInUp 0.8s ease-out 1.2s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			    display: block;
+			    width: 100%;
+			    max-width: 300px;
+			    margin-left: auto;
+			    margin-right: auto;
+			  }
+			  .container .content .buy .buy-btn:hover {
+			    background-color: #ff7950;
+			  }
+			  .container .content .service {
+			    display: flex;
+			    flex-direction: column;
+			    gap: 20px;
+			    margin-top: 30px;
+			    animation: fadeInUp 0.8s ease-out 1.4s;
+			    opacity: 0;
+			    animation-fill-mode: forwards;
+			  }
+			  .container .content .service .service-item {
+			    display: flex;
+			    flex-direction: column;
+			    flex: 1;
+			    margin-bottom: 10px;
+			    padding: 15px;
+			    border-radius: 12px;
+			    background-color: rgba(240, 240, 240, 0.5);
+			  }
+			  .container .content .service .service-item .icon {
+			    height: 36px;
+			    width: 36px;
+			    margin-bottom: 8px;
+			  }
+			  .container .content .service .service-item .title {
+			    font-size: 20px;
+			    font-weight: bold;
+			    line-height: 1.2;
+			    margin-bottom: 8px;
+			    margin-top: 0;
+			    color: #333;
+			  }
+			  .container .content .service .service-item .desc {
+			    font-size: 14px;
+			    font-weight: lighter;
+			    color: #555;
+			    word-wrap: break-word;
+			    overflow-wrap: break-word;
+			  }
+			}
+			
+			/* 手机端（小于 576px） */
+			@media (max-width: 575px) {
+			  .background-image, .image-mask {
+			    height: 180px;
+			  }
+			  .container .cover {
+			    margin-top: 200px;
+			    padding: 15px 10px;
+			  }
+			  .container .cover .product {
+			    height: 180px;
+			    border-radius: 18px;
+			  }
+              
+			  .container .cover .info {
+			    font-size: 18px;
+			    margin-top: 15px;
+			  }
+			  .container .cover .info .price {
+			    min-height: 55px;
+			    border-radius: 15px;
+			    padding: 8px 10px;
+			    text-align: center;
+			    word-wrap: break-word;
+			    overflow-wrap: break-word;
+			  }
+			  .container .cover .info span {
+			    font-size: 24px;
+			    margin: 0 4px;
+			  }
+			  .container .cover .info .vip-price {
+			    margin-top: 6px;
+			  }
+			  .container .cover .info .raw-price {
+			    font-size: 16px;
+			  }
+			  .container .content {
+			    padding: 15px 10px;
+			    margin-top: 15px;
+			  }
+			  .container .content .buy .logo img {
+			    width: 130px;
+			  }
+			  .container .content .buy .title {
+			    font-size: 22px;
+			    margin: 10px 0;
+			  }
+			  .container .content .buy .desc,
+			  .container .content .buy .todo {
+			    font-size: 15px;
+			  }
+			  .container .content .buy .desc {
+			    margin: 15px 0;
+			  }
+			  .container .content .buy .todo .todo-item {
+			    margin: 6px 0;
+			  }
+			  .container .content .buy .buy-btn {
+			    font-size: 18px;
+			    line-height: 26px;
+			    padding: 8px 15px;
+			    margin-top: 20px;
+			    max-width: 250px;
+			  }
+			  .container .content .service {
+			    gap: 15px;
+			    margin-top: 25px;
+			  }
+			  .container .content .service .service-item {
+			    padding: 12px;
+			    margin-bottom: 8px;
+			  }
+			  .container .content .service .service-item .icon {
+			    height: 30px;
+			    width: 30px;
+			    margin-bottom: 6px;
+			  }
+			  .container .content .service .service-item .title {
+			    font-size: 18px;
+			    margin-bottom: 6px;
+			  }
+			  .container .content .service .service-item .desc {
+			    font-size: 13px;
+			  }
+			}
+		</style>
+    {{ content_for_header }}
+  </head>
+  <body>
+    <div class="root">
+			<img src="{{ 'background.jpg' | file_url }}" class="background-image" alt="" />
+			<div class="image-mask"></div>
+			<div class="container">
+				<div class="content">
+					<div class="buy">
+						<div class="logo">
+							<img src="{{ 'logo.png' | file_url }}" alt="" />
+						</div>
+						<div class="title">Ready to Seize the Best Price</div>
+						<div class="desc">
+							Thanks for signing up! Secure the best price by
+							becoming a VIP with a fully refundable $9.9 deposit,
+							even lower than the Super Early Bird Price!
+						</div>
+						<div class="todo">
+							<div class="todo-item">
+								✅ Get BirdieCoach for $659USD with 45% off
+								Exclusive VIP offer
+							</div>
+							<div class="todo-item">
+								✅ Surprise giveaways & rewards/ Free Gifts
+								(Value $140USD) just for VIPs
+							</div>
+							<div class="todo-item">
+								✅ Early access to updates & behind-the-scenes
+								content
+							</div>
+						</div>
+						<div class="buy-btn" id="buy-btn">
+							Reserve $9.9 Now
+						</div>
+					</div>
+					<div class="service">
+						<div class="service-item">
+							<div class="icon">
+								<img src="{{ 'money_sign_icon_7423e41b-f5d6-4c7f-8caf-45e57d2540f6.png' | file_url }}" alt="" />
+							</div>
+							<div class="title">Guaranted 100% Refund</div>
+							<div class="desc">
+								Thanks for signing up! Secure the best price by
+								becoming a VIP with a fully refundable $9.9
+								deposit, even lower than the Super Early Bird
+								Price!
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="icon">
+								<img src="{{ 'locked_protected_secure_icon_22b8c86e-7669-43b5-86d6-c2f74aa7331b.png' | file_url }}" alt="" />
+							</div>
+							<div class="title">Safe and Secure</div>
+							<div class="desc">
+								Thanks for signing up! Secure the best price by
+								becoming a VIP with a fully refundable $9.9
+								deposit, even lower than the Super Early Bird
+								Price!
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="icon">
+								<img src="{{ 'thumbs_up_icon_40b5c51c-3ed5-40c6-adfe-cb061a7d3d86.png' | file_url }}" alt="" />
+							</div>
+							<div class="title">Transparent Process</div>
+							<div class="desc">
+								Thanks for signing up! Secure the best price by
+								becoming a VIP with a fully refundable $9.9
+								deposit, even lower than the Super Early Bird
+								Price!
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cover">
+					<div class="product">
+                      <img src="{{ 'product.png' | file_url }}" alt="">
+                    </div>
+					<div class="info">
+						<div class="price">
+							<div>Pay <span>$9.9</span></div>
+							<div>Save <span>$9.5</span></div>
+						</div>
+						<div class="vip-price">
+							VIP Only, from <span>$109</span>
+						</div>
+						<div class="raw-price">MSPR $199</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    {{ page.content }}
+  </body>
+  	<script type="text/javascript">
+		const variant = 50340151394600;
+
+		async function addCart() {
+
+		    await clearCart();
+
+			let formData = {
+				items: [
+					{
+						id: variant,
+						quantity: 1,
+					},
+				],
+			};
+
+			fetch(window.Shopify.routes.root + 'cart/add.js', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(formData),
+			})
+				.then((response) => {
+					location.href = '/checkout';
+				})
+				.catch((error) => {
+					console.error('Error:', error);
+				});
+		}
+
+		function clearCart(){
+		   return fetch(window.Shopify.routes.root + 'cart/clear.js', {
+		        method: 'POST',
+		        headers: {
+		            'Content-Type': 'application/json',
+		        },
+		    })
+		}
+
+		window.document.querySelector('#buy-btn').addEventListener('click', addCart);
+	</script>
+</html>
