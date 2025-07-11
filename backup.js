@@ -27,8 +27,8 @@ function run (command) {
 }
 
 
-await run(`git checkout master`)
+await run(`git checkout main`)
 await run(`git checkout -B ${version}`)
 // await run(`npm run pull`)
 await run(`git push origin ${version} -f`)
-await run(`git checkout master`)
+await run(`git checkout main`)
