@@ -1,12 +1,4 @@
-<!-- templates/page.blank.liquid -->
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ page.title }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+ <style>
 			* {
 			  margin: 0;
 			  padding: 0;
@@ -31,6 +23,7 @@
 			.root {
 			  width: 100%;
 			  position: relative;
+			  background-color: #CABBA8;
 			}
 
 			/* 电脑端（大于等于 768px） */
@@ -69,6 +62,7 @@
 			    display: flex;
 			    align-items: center;
 			    justify-content: center;
+				overflow: hidden;
 			  }
 			  .container .content {
 			    width: 100%;
@@ -103,7 +97,7 @@
 			    overflow-wrap: break-word;
 			  }
 			  .container .content .buy .desc {
-			    margin: 18px 0;
+			    margin: 0 0 18px;
 			    animation: fadeInUp 0.8s ease-out 0.4s;
 			    opacity: 0;
 			    animation-fill-mode: forwards;
@@ -148,6 +142,7 @@
 			    animation: fadeInUp 0.8s ease-out 1s;
 			    opacity: 0;
 			    animation-fill-mode: forwards;
+				padding: 0 8vw;
 			  }
 			  .container .content .service .service-item {
 			    display: flex;
@@ -162,7 +157,7 @@
 			    font-size: 20px;
 			    font-weight: bold;
 			    line-height: 1.2;
-			    margin-bottom: 8px;
+			    /* margin-bottom: 8px; */
                 margin-top:0;
 			  }
 			  .container .content .service .service-item .desc {
@@ -251,11 +246,11 @@
 			    position: fixed;
 			    top: 0;
 			    left: 0;
-			    background-color: rgba(0, 0, 0, 0.4);
+			    /* background-color: rgba(0, 0, 0, 0.4); */
 			    z-index: 0;
 			  }
 			  .container {
-			    padding: 0 20px 30px;
+			    /* padding: 0 20px 30px; */
 			    box-sizing: border-box;
 			    margin: 0 auto;
 			    width: 100%;
@@ -271,11 +266,11 @@
 			    font-size: 16px;
 			    color: #333;
 			    order: 2;
-			    margin-top: 20px;
-			    background-color: #ffffff;
+			    /* margin-top: 20px; */
+			    /* background-color: #ffffff; */
 			    border-radius: 15px 15px 0 0;
-			    padding: 20px 15px;
-			    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+			    /* padding: 20px 15px; */
+			    /* box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05); */
 			  }
 			  .container .cover {
 			    width: 100%;
@@ -289,7 +284,7 @@
 			    animation: fadeInUp 0.8s ease-out 0.2s;
 			    opacity: 0;
 			    animation-fill-mode: forwards;
-			    background-color: rgba(255, 255, 255, 0.9);
+			    /* background-color: rgba(255, 255, 255, 0.9); */
 			    padding: 20px 15px;
 			    border-radius: 15px;
 			  }
@@ -343,8 +338,12 @@
 			    font-size: 32px;
 			  }
 			  .container .content .buy {
-			    padding-top: 20px;
+			    padding: 0 8vw;
 			    animation: fadeInUp 0.8s ease-out 0.4s;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				color: #fff;
 			  }
 			  .container .content .buy .logo {
 			    animation: fadeInUp 0.8s ease-out 0.4s;
@@ -359,18 +358,18 @@
 			    animation: fadeInUp 0.8s ease-out 0.6s;
 			    opacity: 0;
 			    animation-fill-mode: forwards;
-			    color: #333;
+			    /* color: #333; */
                 line-height: 1.1;
 			  }
 			  .container .content .buy .desc,
 			  .container .content .buy .todo {
-			    font-weight: lighter;
+			    font-weight: 300;
 			    font-size: 18px;
-			    color: #333;
-                line-height: 1.3;
+			    color: #fff;
+				line-height: 1.5;
 			  }
 			  .container .content .buy .desc {
-			    margin: 18px 0;
+			    margin: 0 0 18px;
 			    animation: fadeInUp 0.8s ease-out 0.8s;
 			    opacity: 0;
 			    animation-fill-mode: forwards;
@@ -420,33 +419,34 @@
 			    animation: fadeInUp 0.8s ease-out 1.4s;
 			    opacity: 0;
 			    animation-fill-mode: forwards;
+				padding: 0 8vw;
 			  }
 			  .container .content .service .service-item {
 			    display: flex;
 			    flex-direction: column;
 			    flex: 1;
 			    margin-bottom: 10px;
-			    padding: 15px;
+			    /* padding: 15px; */
 			    border-radius: 12px;
-			    background-color: rgba(240, 240, 240, 0.5);
+				color: #fff;
+			    /* background-color: rgba(240, 240, 240, 0.5); */
 			  }
 			  .container .content .service .service-item .icon {
 			    height: 36px;
 			    width: 36px;
-			    margin-bottom: 8px;
 			  }
 			  .container .content .service .service-item .title {
 			    font-size: 20px;
 			    font-weight: bold;
 			    line-height: 1.2;
-			    margin-bottom: 8px;
+			    /* margin-bottom: 8px; */
 			    margin-top: 0;
-			    color: #333;
+			    color: #fff;
 			  }
 			  .container .content .service .service-item .desc {
 			    font-size: 14px;
 			    font-weight: lighter;
-			    color: #555;
+			    /* color: #555; */
 			    word-wrap: break-word;
 			    overflow-wrap: break-word;
 			  }
@@ -458,7 +458,7 @@
 			    height: 180px;
 			  }
 			  .container .cover {
-			    margin-top: 200px;
+			    margin-top: 0;
 			    padding: 15px 10px;
 			  }
 			  .container .cover .product {
@@ -489,8 +489,9 @@
 			    font-size: 16px;
 			  }
 			  .container .content {
-			    padding: 15px 10px;
+			    /* padding: 15px 10px; */
 			    margin-top: 15px;
+				margin-top: 0;
 			  }
 			  .container .content .buy .logo img {
 			    width: 130px;
@@ -504,7 +505,7 @@
 			    font-size: 15px;
 			  }
 			  .container .content .buy .desc {
-			    margin: 15px 0;
+			    margin: 0 0 15px;
 			  }
 			  .container .content .buy .todo .todo-item {
 			    margin: 6px 0;
@@ -521,28 +522,109 @@
 			    margin-top: 25px;
 			  }
 			  .container .content .service .service-item {
-			    padding: 12px;
+			    /* padding: 12px; */
 			    margin-bottom: 8px;
-			  }
-			  .container .content .service .service-item .icon {
-			    height: 30px;
-			    width: 30px;
-			    margin-bottom: 6px;
 			  }
 			  .container .content .service .service-item .title {
 			    font-size: 18px;
-			    margin-bottom: 6px;
+			    /* margin-bottom: 6px; */
 			  }
 			  .container .content .service .service-item .desc {
 			    font-size: 13px;
 			  }
 			}
+
+			/* 产品视觉板块样式 */
+.product-visual-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #e6ded5;
+    padding: 32px 24px 24px 24px;
+    margin: 32px 0 0 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    position: relative;
+    overflow: hidden;
+	background: url('https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250715-173437.jpg?v=1752572099') center center / cover no-repeat;
+
+}
+.visual-img-wrap {
+    width: 320px;
+    max-width: 90vw;
+    margin-bottom: 24px;
+}
+.visual-img {
+    width: 100%;
+    display: block;
+	max-width: 60vw;
+    margin: 0 auto;
+}
+.visual-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.visual-title {
+    background: #00aeea;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 32px;
+    margin-bottom: 10px;
+    /* letter-spacing: 1px; */
+}
+.visual-vip {
+    font-size: 14px;
+    color: #fff;
+	font-weight: 500;
+    margin-bottom: 4px;
+}
+.visual-price {
+    /* color: #fd4b17; */
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+.visual-msrp {
+    font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+    /* color: #888; */
+}
+.visual-msrp-price {
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+@media (max-width: 767px) {
+    .product-visual-block {
+        padding: 18px 8px 16px 8px;
+        margin: 30px 0;
+    }
+    .visual-img-wrap {
+        width: 95vw;
+        max-width: 320px;
+        margin-bottom: 16px;
+    }
+    .visual-title {
+        font-size: 16px;
+        padding: 10px 36px;
+		background-image: linear-gradient(81deg,#01C8E2, #097FC7);
+    }
+    .visual-vip {
+        font-size: 16px;
+    }
+    .visual-price {
+        font-size: 20px;
+    }
+    .visual-msrp {
+        font-size: 13px;
+    }
+}
 		</style>
-    {{ content_for_header }}
-  </head>
-  <body>
-    <div class="root">
-			<img src="{{ 'background.jpg' | file_url }}" class="background-image" alt="" />
+    <div class="root er-font-base">
+			<img src="{{ 'background.jpg' | file_url }}" loading="lazy" class="background-image PC" alt="" />
 			<div class="image-mask"></div>
 			<div class="container">
 				<div class="content">
@@ -550,95 +632,96 @@
 						<div class="logo">
 							<img src="{{ 'logo.png' | file_url }}" alt="" />
 						</div>
-						<div class="title">Ready to Seize the Best Price</div>
-						<div class="desc">
-							Thanks for signing up! Secure the best price by
-							becoming a VIP with a fully refundable $9.9 deposit,
-							even lower than the Super Early Bird Price!
+						<div class="title">Thanks for Signing Up!</div>
+						<div class="desc !er-font-semibold">
+							Secure the best price by becoming a VIP with a fully refundable $9.9 deposit, even lower than the Super Early Bird Price
 						</div>
 						<div class="todo">
 							<div class="todo-item">
-								✅ Get BirdieCoach for $659USD with 45% off
-								Exclusive VIP offer
+								✅ AIVELA RING PRO for $99 ($50 off compared to Super Early Bird Price)
 							</div>
 							<div class="todo-item">
-								✅ Surprise giveaways & rewards/ Free Gifts
-								(Value $140USD) just for VIPs
+								✅ AIVELA ring charging case for FREE
 							</div>
 							<div class="todo-item">
-								✅ Early access to updates & behind-the-scenes
-								content
+								✅ 2-year limited warranty only for crowdfunding backers
 							</div>
 						</div>
 						<div class="buy-btn" id="buy-btn">
 							Reserve $9.9 Now
 						</div>
 					</div>
+					<div class="product-visual-block md:!er-hidden">
+                        <div class="visual-img-wrap">
+                            <img src="{{ 'product.png' | file_url }}" loading="lazy" alt="AIVELA RING PRO Visual" class="visual-img" />
+                        </div>
+                        <div class="visual-info">
+                            <div class="visual-title">AIVELA RING PRO</div>
+                            <div class="visual-vip">
+                                VIP Deal <span class="visual-price">$99</span>
+                            </div>
+                            <div class="visual-msrp">MSRP <span class="visual-msrp-price">$249</span></div>
+                        </div>
+                    </div>
 					<div class="service">
 						<div class="service-item">
-							<div class="icon">
-								<img src="{{ 'money_sign_icon_7423e41b-f5d6-4c7f-8caf-45e57d2540f6.png' | file_url }}" alt="" />
+							<div class="er-flex er-items-center er-mb-2">
+								<div class="icon er-mr-1">
+									<img width="36" height="36" loading="lazy" src="{{ 'money_sign_icon_7423e41b-f5d6-4c7f-8caf-45e57d2540f6.png' | file_url }}" alt="" />
+								</div>
+								<div class="title">Guaranted 100% Refund</div>
 							</div>
-							<div class="title">Guaranted 100% Refund</div>
-							<div class="desc">
-								Thanks for signing up! Secure the best price by
-								becoming a VIP with a fully refundable $9.9
-								deposit, even lower than the Super Early Bird
-								Price!
-							</div>
-						</div>
-						<div class="service-item">
-							<div class="icon">
-								<img src="{{ 'locked_protected_secure_icon_22b8c86e-7669-43b5-86d6-c2f74aa7331b.png' | file_url }}" alt="" />
-							</div>
-							<div class="title">Safe and Secure</div>
-							<div class="desc">
-								Thanks for signing up! Secure the best price by
-								becoming a VIP with a fully refundable $9.9
-								deposit, even lower than the Super Early Bird
-								Price!
+							<div class="desc er-font-poppins er-leading-normal !er-font-light">
+								We will fully refund the deposit if you choose not to back us in the crowdfunding campaign.
 							</div>
 						</div>
 						<div class="service-item">
-							<div class="icon">
-								<img src="{{ 'thumbs_up_icon_40b5c51c-3ed5-40c6-adfe-cb061a7d3d86.png' | file_url }}" alt="" />
+							<div class="er-flex er-items-center er-mb-2">
+								<div class="icon er-mr-1">
+									<img width="36" height="36" loading="lazy" src="{{ 'locked_protected_secure_icon_22b8c86e-7669-43b5-86d6-c2f74aa7331b.png' | file_url }}" alt="" />
+								</div>
+								<div class="title">Limited Spots</div>
 							</div>
-							<div class="title">Transparent Process</div>
-							<div class="desc">
-								Thanks for signing up! Secure the best price by
-								becoming a VIP with a fully refundable $9.9
-								deposit, even lower than the Super Early Bird
-								Price!
+							<div class="desc er-font-poppins er-leading-normal !er-font-light">
+								We will take only 500 VIP reservations to reward our earliest backers.
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="er-flex er-items-center er-mb-2">
+								<div class="icon er-mr-1">
+									<img width="30" height="30" loading="lazy" src="{{ 'thumbs_up_icon_40b5c51c-3ed5-40c6-adfe-cb061a7d3d86.png' | file_url }}" alt="" />
+								</div>
+								<div class="title">Transparent Process</div>
+							</div>
+							<div class="desc er-font-poppins er-leading-normal !er-font-light">
+								We will send you a secret link at launch on Kickstarter, which is valid for you exclusively.
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="cover">
+				<div class="cover PC">
 					<div class="product">
-                      <img src="{{ 'product.png' | file_url }}" alt="">
+                      <img src="{{ 'product.png' | file_url }}" loading="lazy" alt="">
                     </div>
 					<div class="info">
-						<div class="price">
-							<div>Pay <span>$9.9</span></div>
-							<div>Save <span>$9.5</span></div>
+						<div class="price er-font-base er-font-bold">
+							AIVELA RING PRO
 						</div>
-						<div class="vip-price">
-							VIP Only, from <span>$109</span>
+						<div class="vip-price er-font-base">
+							VIP Deal <span class="er-font-bold">$99</span>
 						</div>
-						<div class="raw-price">MSPR $199</div>
+						<div class="raw-price er-font-base er-font-medium">MSPR $249</div>
 					</div>
 				</div>
 			</div>
 		</div>
-    {{ page.content }}
-  </body>
-  	<script type="text/javascript">
+  	<script type="module">
 		const variant = 50340151394600;
 
 		async function addCart() {
 
-		    await clearCart();
+		    // await clearCart();
 
 			let formData = {
 				items: [
@@ -674,5 +757,29 @@
 		}
 
 		window.document.querySelector('#buy-btn').addEventListener('click', addCart);
+
+		clearCart()
 	</script>
-</html>
+	<script type="module">
+    let isMobile = false // 默认为false
+
+    // 监听页面视口宽度，小于767时隐藏所有PC类，反之隐藏所有MOB类
+    function handleViewportClass() {
+        isMobile = window.innerWidth < 767;
+        const pcElements = document.querySelectorAll('.PC');
+        const mobElements = document.querySelectorAll('.MOB');
+        pcElements.forEach(el => {
+            el.style.display = isMobile ? 'none' : '';
+        });
+        mobElements.forEach(el => {
+            el.style.display = isMobile ? '' : 'none';
+        });
+        console.log('是否是移动端：', isMobile);
+    }
+
+    // 初始执行一次
+    handleViewportClass();
+    // 监听窗口大小变化
+    window.addEventListener('resize', handleViewportClass);
+
+</script>

@@ -1,4 +1,5 @@
-let height = window.innerHeight
+let height = window.innerHeight;
+let isMobile = window.innerWidth < 767;
 
 function lazyLoad() {
   const imgs = document.querySelectorAll('[data-src]')

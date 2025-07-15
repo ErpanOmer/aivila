@@ -889,7 +889,7 @@ ul {
 }
 
 .container_nine .banner .bg {
-    background-color: #08121B;
+    /* background-color: #08121B; */
     height: 300px;
     display: flex;
     align-items: center;
@@ -1041,7 +1041,7 @@ ul {
 }
 
 .container_ten .banner .bg {
-    background-color: #08121B;
+    /* background-color: #08121B; */
     height: 300px;
     display: flex;
     align-items: center;
@@ -2333,7 +2333,7 @@ ul {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 78px;
+        margin-bottom: 30px;
     }
 
     .empty .bottom_text p {}
@@ -2525,15 +2525,16 @@ ul {
         /* 滚动吸附，可选 */
         /* scroll-snap-type: x mandatory; */
         width: 93%;
-        margin-top: 40px;
+        /* margin-top: 40px; */
         margin-bottom: 81px;
+        padding-top: 60px;
     }
 
     .container_two .card {
         height: 572px;
         min-width: 327px;
         /* 固定宽度，适合一屏显示一张或多张 */
-        background: #121212;
+        background: #1f1f1f;
         color: #fff;
         box-sizing: border-box;
         scroll-snap-align: start;
@@ -2712,7 +2713,7 @@ ul {
 
     .container_four .title span {
         color: #FFFFFF;
-        line-height: 42px;
+        /* line-height: 42px; */
     }
 
     .container_four .title img {
@@ -2795,9 +2796,10 @@ ul {
         position: absolute;
         right: 50%;
         bottom: 20%;
-        width: 234px;
+        width: 110px;
         height: auto;
         transform: translateX(50%);
+        margin-bottom: 12px;
     }
 
 
@@ -2992,10 +2994,11 @@ ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px;
-        text-align: left;
+        padding: 6px;
+        text-align: center;
         /* 字体的透明度 */
         color: rgba(255, 255, 255, 1);
+        font-size: 14px;
     }
 
     /* 新增 */
@@ -3183,7 +3186,7 @@ ul {
 
     .container_seven .text {
         padding: 0 35px;
-        margin-top: 81px;
+        /* margin-top: 81px; */
         display: flex;
         flex-direction: column;
         position: relative;
@@ -3200,7 +3203,7 @@ ul {
         font-family: Poppins, Poppins;
         position: absolute;
         left: 0;
-        bottom: -120px;
+        /* bottom: -120px; */
         padding: 0 35px;
         opacity: 1;
     }
@@ -3232,6 +3235,8 @@ ul {
     .container_seven .summary-content .summary {
         width: 100%;
         min-height: 736px;
+        margin: 25vw 0;
+        transform: translateY(15vw);
     }
 
 
@@ -3486,16 +3491,17 @@ ul {
 
     .container_thirteen .cards>div {
         min-width: 303px;
-        height: 386px;
+        height: auto;
         margin-right: 4%;
         box-sizing: border-box;
-        padding: 0 !important;
+        /* padding: 0 !important; */
         display: flex;
         flex-direction: column;
         border-radius: 15px;
         opacity: 1;
         transform: unset;
         transition: unset;
+        padding-bottom: 30px;
     }
 
     .container_thirteen .cards>div:last-child {
@@ -3548,6 +3554,7 @@ ul {
         box-sizing: border-box;
         color: #FFFFFF;
         line-height: 20px;
+        margin-top: 20px;
     }
 
     .container_fourteen {

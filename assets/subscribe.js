@@ -57,16 +57,7 @@ function subscribe(event) {
         })
         .then((data) => {
             console.log('成功:', data);
-            if (data.data.customerCreate.userErrors.length == 0) {
-                if (errorTips) {
-                    errorTips.style.display = 'none';
-                }
-                window.open('/pages/buy', '_blank');
-            } else {
-                if (errorTips) {
-                    errorTips.style.display = 'block';
-                }
-            }
+            window.open('/pages/buy', '_blank');
         })
         .catch((error) => {
             console.error('请求失败:', error);
