@@ -12,8 +12,8 @@
 }
 
 :root {
-    --title-font-family: "Montserrat", sans-serif;
-    --content-font-family: "Poppins", sans-serif;
+    --title-font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    --content-font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 
     /* 标题 */
     --title-font-size-xss: 18px;

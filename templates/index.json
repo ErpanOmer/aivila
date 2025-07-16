@@ -1,11 +1,1075 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "home-page",
       "settings": {}
+    },
+    "image_banner_ite3aE": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 768px) {div {display: none; }}",
+        ".banner {height: 100vh;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/05_aad0a7c5-7605-443c-91f8-45cb182894f1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_fGniVA": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 768px) {div {display: none; }}",
+        ".banner {height: 100vh;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_3_18528b7d-2baf-48ee-87de-8eb9b8632f17.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_GtJjfx": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 768px) {div {display: none; }}",
+        ".banner {height: 100vh;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/10.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-right",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_4dXNDM": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 768px) {div {display: none; }}",
+        ".banner {height: 100vh;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_4_73225f7f-5354-4b79-bff1-cb21fbdb49db.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-right",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_6YWYRX": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 768px) {div {display: none; }}",
+        ".banner {height: 100vh;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/07_3cf1d12c-5099-49b4-8caa-dd778456baa2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "zoom-in",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_67BCkJ": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 768px) {div {display: none; }}",
+        ".banner {height: 100vh;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_5_4f258aad-749e-42cf-85b8-3f3819b03178.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "zoom-in",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_bMCQcn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BLMBa8": {
+          "type": "heading",
+          "settings": {
+            "heading": "4 Colors X 8 Sizes - Made For You",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BLMBa8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div {background-color: #f5f0eb;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_mGaBFQ": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_eM8QJe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Eclipse",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        },
+        "slide_fJxpc3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_6c4e6081-982d-48f8-914b-016dd3584027.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Lunar",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        },
+        "slide_7LpE9W": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_f55d9da1-4308-4294-93a0-516c613d636c.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Corona",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        },
+        "slide_zJmLYx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_013f151e-152d-430d-945d-ea062b162126.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Dusk",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        }
+      },
+      "block_order": [
+        "slide_eM8QJe",
+        "slide_fJxpc3",
+        "slide_7LpE9W",
+        "slide_zJmLYx"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".slideshow__media {border-radius: 25px;}",
+        ".slideshow__controls {border: 0rem !important; padding: 12px 0px 36px 0px;}",
+        "@media screen and (max-width: 768px) {div {display: none; }}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "关于我们品牌的幻灯片"
+      }
+    },
+    "slideshow_jADCyp": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_C6TmHp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Eclipse",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_UAENYm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_6c4e6081-982d-48f8-914b-016dd3584027.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Lunar",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_EVymBw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_f55d9da1-4308-4294-93a0-516c613d636c.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Corona",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_hQWEed": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_013f151e-152d-430d-945d-ea062b162126.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Dusk",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": [
+        "slide_C6TmHp",
+        "slide_UAENYm",
+        "slide_EVymBw",
+        "slide_hQWEed"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".slideshow__media {border-radius: 25px;}",
+        ".slideshow__controls {border: 0rem !important; padding: 0px 0px 0px 0px;}",
+        "@media screen and (min-width: 768px) {div {display: none; }}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "关于我们品牌的幻灯片"
+      }
+    },
+    "image_with_text_RaTCPd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_w4VwgL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Optimised components",
+            "heading_size": "h1"
+          }
+        },
+        "text_HfekWN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Equipped with PPG (Heart Rate & SpO₂), IMU (6-axis) and Body Temperature Sensors<\/p><p>Powered by an Apollo Ultra-Low Power SoC from Ambiq and a High-capacity (Max 24mAh) Li-Po Battery<\/p><p>Together, this Industry-leading Combination Gives:<\/p><ul><li><strong>Unmatched Data Accuracy<\/strong><\/li><li><strong>10-day Data Storage<\/strong><\/li><li><strong>Up to 7-Day Battery Life<\/strong><\/li><\/ul>",
+            "text_style": "body"
+          }
+        },
+        "button_4tmJPR": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "按钮标签",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_w4VwgL",
+        "text_HfekWN",
+        "button_4tmJPR"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_7_e869c412-1b08-4375-9f1c-bd6c244ee248.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_pijdrX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_R3yWYz": {
+          "type": "heading",
+          "settings": {
+            "heading": "World’s first interactable ring",
+            "heading_size": "h1"
+          }
+        },
+        "text_zEJVJh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fingertip Controller Enabling Multi-device Interaction<\/p><ul><li>20x20 High-resolution Grid Optical Touchscreen(compared to 3x3 traditional capacitive solutions)<\/li><li>Instant Reaction with Ultra-fast 24-inch\/sec Tracking Speed <\/li><li>Pixel-perfect Responsiveness to 7 Gestures (Swipe Up\/Down\/Left\/Right and Single\/Double\/Long Tap)<\/li><\/ul>",
+            "text_style": "body"
+          }
+        },
+        "button_GiNdLY": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "按钮标签",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_R3yWYz",
+        "text_zEJVJh",
+        "button_GiNdLY"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div {background-color: #f5f0eb;}",
+        ".image-with-text__media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_8_8df9fe70-1c00-4f24-91e1-a6426cb6d77b.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_t7FwnA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_maGtJk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_395a1438-3fd5-4a23-93d9-9c5bccd85ee1.jpg",
+            "title": "Page Flip",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DYGWwG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_bfd2cbf1-adbd-4ea1-9892-4b5f30e4d0df.jpg",
+            "title": "Music Control",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nBrU3a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_a904f580-bfee-4ab2-b15f-cb22c852521b.jpg",
+            "title": "Video Switch",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RAk6hp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_e3ba685e-c146-4326-b667-9430bb0b6461.jpg",
+            "title": "Remote Camera",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_maGtJk",
+        "column_DYGWwG",
+        "column_nBrU3a",
+        "column_RAk6hp"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div {background-color: #f5f0eb;}",
+        ".media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "title": "Makes life Easier with One Click",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "image_with_text_e8GTMd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JChDzK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fully Supportive for Fitness Tracking",
+            "heading_size": "h1"
+          }
+        },
+        "text_AHhzck": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Sport Mode:<\/strong> Detect every move and gives pro-level insights<\/p><p><strong>Real-Time Heart Rate: <\/strong>Non-stop monitoring of heart rate during exercise<\/p><p><strong>Workout Calorie:<\/strong> Precise burns calculation with 10+ types of workouts<\/p><p><strong>Stamina Index:<\/strong> Exclusive algorithm balances exertion & recovery<\/p><p><strong>Sync & Share:<\/strong> Seamlessly export data to Strava and other apps<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_b88yE8": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "按钮标签",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JChDzK",
+        "text_AHhzck",
+        "button_b88yE8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_2_70e73e73-c1f9-444b-bee2-1455b9609668.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_JAkfVj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_c6LUy7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Advanced Sleep Algorithms",
+            "heading_size": "h1"
+          }
+        },
+        "text_rHKDV9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Accurate Detection:<\/strong><\/p><ul><li>Nighttime Sleep <\/li><li>Daytime Nap<\/li><\/ul><p><strong>Professional Analysis:<\/strong><\/p><ul><li>Sleep Duration<\/li><li>Sleep Efficiency<\/li><li>Sleep Latency<\/li><li>Sleep Stages<\/li><li>Respiratory Rate<\/li><li>Resting Heart Rate<\/li><li>Sleep Score<\/li><\/ul><p>*Powered by Gomore<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_rKAffY": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "按钮标签",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_c6LUy7",
+        "text_rHKDV9",
+        "button_rKAffY"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_3_1fac41aa-d25e-43bf-928b-4066c2d90876.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3CbrRD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Qx3tX8": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Ultimate Health Tracker",
+            "heading_size": "h1"
+          }
+        },
+        "text_KyAw8b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>24\/7 Vital Sign Tracking: <\/strong>Heart Rate, Blood Oxygen (SpO₂) and Skin Temperature<\/p><p><strong>Stress:<\/strong> AI-driven stress score (1-100) based on heart rate variability (HRV) and activity patterns.<br\/><br\/><strong>Activity Score:<\/strong> Quantifies daily movement intensity—Steps, Calories, Active minutes.<br\/><br\/><strong>Health Score:<\/strong> Combines all your vitals plus sleep, recovery, and activity. A single number tells your status.<br\/><br\/><strong>Inactivity Alerts: <\/strong>Smart inactivity alerts nudge you to stretch, walk, or dance—no more couch lock.\"<br\/><br\/><strong>Women’s Health: <\/strong>Predicts menstrual cycles & ovulation windows with 98% accuracy via basal body temperature trends.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qx3tX8",
+        "text_KyAw8b"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div {background-color: #f5f0eb;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "slideshow_xTAFc6": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_9CXWrX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_1_f6bf4f37-5eda-4771-9db7-ebf408e2556b.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_9CXWrX"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{background-color: #f5f0eb; padding-bottom: 36px;}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": ""
+      }
+    },
+    "image_with_text_RPcEtr": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_XRHhEX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Proprietary AI Companion following Professional Guidlines",
+            "heading_size": "h1"
+          }
+        },
+        "text_UfAj6n": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>AI Health Advisor Powered by GPT-4o:<\/strong><br\/>Trained on real-world clinical data and compliant with AHA (American Heart Association) and AASM (American Academy of Sleep Medicine) guidelines—your pocket-sized medical expert, backed by science.\"<br\/><br\/><strong>Humanized Health Conversations:<\/strong><br\/>No jargon, just clarity. We translate complex medical metrics into plain language, then offer actionable advice (like \"walk 15 more minutes daily\") to improve your weakest health scores.\"<br\/><br\/><strong>Your Data, Your Story:<\/strong><br\/>Forget generic benchmarks. Our AI cross-analyzes your sleep, activity, and vitals over time, uncovering hidden drivers (e.g., \"poor sleep spikes stress\") and cheering every win—because progress is personal<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_UMYeKC": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "按钮标签",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XRHhEX",
+        "text_UfAj6n",
+        "button_UMYeKC"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_4_2714601d-2ec0-4fdf-8b9f-f538247fe8d2.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_yCCdL7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zWVrBN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Innovative Gesture Recognition",
+            "heading_size": "h1"
+          }
+        },
+        "text_qbzRaE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Send a hug or heart-shaped gesture to your partner or family—effortlessly share moments of care, no words needed.<\/p><p>Your ring bridges distances with a simple touch.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_zD9ExB": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "按钮标签",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zWVrBN",
+        "text_qbzRaE",
+        "button_zD9ExB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_5_0f57fa44-b2cb-49a7-9a22-34df07b1cf9f.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_p9YTPW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_knzhC7": {
+          "type": "heading",
+          "settings": {
+            "heading": "AIVELA, Born Premium",
+            "heading_size": "h1"
+          }
+        },
+        "text_YmLWjz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>By partnering with Goertek (a key supplier to Apple, Meta, Sony, etc.), with precise engineering and rigorous quality control, the AIVELA Ring is built to be perfect, transforming cutting-edge designs into reliable products.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_8N8AKY": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "按钮标签",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_knzhC7",
+        "text_YmLWjz",
+        "button_8N8AKY"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div {background-color: #f5f0eb;}",
+        ".image-with-text__media {border-radius: 25px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1701743675277__copy_73383168-f0af-410d-931c-6356244f3f94.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_FaqAqh": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_9yn8bW": {
+          "type": "heading",
+          "settings": {
+            "heading": "AIVELA: Where Mythology Meets Modern AI",
+            "heading_size": "h1"
+          }
+        },
+        "text_Vmtbfy": {
+          "type": "text",
+          "settings": {
+            "text": "Inspired by the ancient Greek legend of Jason and the Argonauts’ quest for the Golden Fleece, the ship’s sail (Vela) empowered heroes to conquer uncharted waters. Today, YOU are the hero of your own story. At AIVELA, we forge AI as your new Vela—an intelligent compass guiding every user to chase their unique version of the Golden Fleece: a healthier, fuller, and more purposeful life",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9yn8bW",
+        "text_Vmtbfy"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 768px) {div {display: none; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1691743675270_.pic_hd_copy.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "top-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": true
+      }
+    },
+    "image_banner_zjWyxn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_98zh6e": {
+          "type": "heading",
+          "settings": {
+            "heading": "AIVELA: Where Mythology Meets Modern AI",
+            "heading_size": "h1"
+          }
+        },
+        "text_zeGQtm": {
+          "type": "text",
+          "settings": {
+            "text": "Inspired by the ancient Greek legend of Jason and the Argonauts’ quest for the Golden Fleece, the ship’s sail (Vela) empowered heroes to conquer uncharted waters. Today, YOU are the hero of your own story. At AIVELA, we forge AI as your new Vela—an intelligent compass guiding every user to chase their unique version of the Golden Fleece: a healthier, fuller, and more purposeful life",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_98zh6e",
+        "text_zeGQtm"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 768px) {div {display: none; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_6_44e693ca-31af-49e2-9457-e0568cf597ff.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "top-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": true
+      }
+    },
+    "newsletter_bNLq7R": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_YiTygf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to Receive Latest News",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_iwxxiw": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subscribe to receive latest news<\/p>"
+          }
+        },
+        "email_form_GJFmUn": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_YiTygf",
+        "paragraph_iwxxiw",
+        "email_form_GJFmUn"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_yWqVXx": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_FQdnad": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6TfAYy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_M3XPiB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Ma4qEB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_FQdnad",
+        "collapsible_row_6TfAYy",
+        "collapsible_row_M3XPiB",
+        "collapsible_row_Ma4qEB"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "可折叠内容",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_ite3aE",
+    "image_banner_fGniVA",
+    "image_banner_GtJjfx",
+    "image_banner_4dXNDM",
+    "image_banner_6YWYRX",
+    "image_banner_67BCkJ",
+    "rich_text_bMCQcn",
+    "slideshow_mGaBFQ",
+    "slideshow_jADCyp",
+    "image_with_text_RaTCPd",
+    "image_with_text_pijdrX",
+    "multicolumn_t7FwnA",
+    "image_with_text_e8GTMd",
+    "image_with_text_JAkfVj",
+    "rich_text_3CbrRD",
+    "slideshow_xTAFc6",
+    "image_with_text_RPcEtr",
+    "image_with_text_yCCdL7",
+    "image_with_text_p9YTPW",
+    "image_banner_FaqAqh",
+    "image_banner_zjWyxn",
+    "newsletter_bNLq7R",
+    "collapsible_content_yWqVXx"
   ]
 }

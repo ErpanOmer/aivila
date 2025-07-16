@@ -72,3 +72,7 @@ body,.section_view{
     /* 添加震动动画 */
     animation: shake 0.5s ease-in-out;
 }
+
+html, body {
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}

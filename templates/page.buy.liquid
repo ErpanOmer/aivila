@@ -142,7 +142,6 @@
 			    animation: fadeInUp 0.8s ease-out 1s;
 			    opacity: 0;
 			    animation-fill-mode: forwards;
-				padding: 0 8vw;
 			  }
 			  .container .content .service .service-item {
 			    display: flex;
@@ -259,6 +258,7 @@
 			    z-index: 1;
 			    display: flex;
 			    flex-direction: column;
+                padding-bottom: 15vw;
 			  }
 			  .container .content {
 			    width: 100%;
@@ -732,7 +732,7 @@
 				],
 			};
 
-			fetch(window.Shopify.routes.root + 'cart/add.js', {
+			fetch('/cart/add.js', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -748,7 +748,7 @@
 		}
 
 		function clearCart(){
-		   return fetch(window.Shopify.routes.root + 'cart/clear.js', {
+		   return fetch('/cart/clear.js', {
 		        method: 'POST',
 		        headers: {
 		            'Content-Type': 'application/json',
