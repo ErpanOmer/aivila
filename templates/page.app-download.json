@@ -1,0 +1,243 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_ite3aE": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_8UyKQR": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>AIVELA APP DOWNLOAD<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_PMe848": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "World's First AI Ring to Master Health & Life",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8UyKQR",
+        "text_PMe848"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC08670.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_ByLmrQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_meDPT9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Scan the QR code below or click the button to access the App",
+            "heading_size": "h1"
+          }
+        },
+        "text_gyTeQW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>AIVELA Ring Pro is compatible with the following:<\/strong><\/p><p>•\tiOS version 15.0 or higher (iPhone 8 and above)<br\/>•\tAndroid version 9.0 or higher, with Bluetooth 5.0 or above<\/p><p>Ensure that your phone has Bluetooth enabled and is in close proximity when attempting to pair with the ring. <\/p><p><strong>For iOS users: To access our beta app, please enable Developer Mode (Settings &gt; Privacy & Security) and install TestFlight from the App Store. Then scan the QR code or click the button below to get the invite link and begin testing. <\/strong><\/p>"
+          }
+        },
+        "button_qUaTCj": {
+          "type": "button",
+          "settings": {
+            "button_label": "For iOS(TestFlight)",
+            "button_link": "https:\/\/testflight.apple.com\/join\/PPJnwyQN",
+            "button_style_secondary": false,
+            "button_label_2": "For Android",
+            "button_link_2": "https:\/\/www.pgyer.com\/es1B7B6f",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_meDPT9",
+        "text_gyTeQW",
+        "button_qUaTCj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_t7FwnA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_maGtJk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/apple.jpg",
+            "title": "For iOS(TestFlight)",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DYGWwG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/androd.jpg",
+            "title": "For Android",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_maGtJk",
+        "column_DYGWwG"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "newsletter_bNLq7R": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_YiTygf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to Receive Latest News",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_iwxxiw": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subscribe to receive latest news<\/p>"
+          }
+        },
+        "email_form_GJFmUn": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_YiTygf",
+        "paragraph_iwxxiw",
+        "email_form_GJFmUn"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_yWqVXx": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_FQdnad": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6TfAYy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_M3XPiB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Ma4qEB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_FQdnad",
+        "collapsible_row_6TfAYy",
+        "collapsible_row_M3XPiB",
+        "collapsible_row_Ma4qEB"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "可折叠内容",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_ite3aE",
+    "rich_text_ByLmrQ",
+    "multicolumn_t7FwnA",
+    "newsletter_bNLq7R",
+    "collapsible_content_yWqVXx"
+  ]
+}
