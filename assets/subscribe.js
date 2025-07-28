@@ -26,14 +26,14 @@ function subscribe(event) {
 
     // 验证输入框是否有值
     if (!emailValue) {
-        alert('请输入您的邮箱地址！');
+        alert('Please enter your email address!');
         return;
     }
 
     // 验证邮箱格式
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailValue)) {
-        alert('请输入有效的邮箱地址！');
+        alert('Please enter a valid email address');
         return;
     }
 
