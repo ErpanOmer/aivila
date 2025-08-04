@@ -1237,7 +1237,7 @@ const observerThirteen = new IntersectionObserver(
 );
 
 // 开始观察container_thirteen
-observerThirteen.observe(containerThirteen);
+// observerThirteen.observe(containerThirteen);
 
 if (isMobile) {
 	// 获取相关DOM元素

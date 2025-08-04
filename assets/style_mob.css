@@ -3444,7 +3444,9 @@ ul {
 
 
     .container_twelve .text img {
-        width: 260px !important;
+        width: 200px !important;
+        display: block;
+        margin-left: auto;
     }
 
     .container_thirteen {
