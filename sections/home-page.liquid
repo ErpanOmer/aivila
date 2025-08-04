@@ -6,6 +6,31 @@
   <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
   <script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer></script>
   <script src="{{ 'gsap.min.js' | asset_url }}" defer></script>
+  <style>
+    .custom-select {
+      appearance: none; /* 关键：隐藏原生箭头 */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='14' viewBox='0 0 24 24' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right -6px center;
+        background-size: 30px 30px;
+       text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            padding: 0 16px;
+                white-space: break-spaces;
+    }
+
+    .custom-select option {
+        text-align: center;
+    }
+
+    .custom-select:focus {
+      outline: none;
+    }
+  </style>
 <section class="section_view">
         <div class="empty container_one">
             <div class="c_one_logo">
@@ -201,7 +226,7 @@
                         class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center er-font-bold mb:er-text-sm">
                         2.4-3.6g
                     </div>
-                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs er-px-2 er-max-w-min er-place-self-center">
+                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs er-px-2">
                         PPG, IMU,<br>Temperature,OFN
                     </div>
                     <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-sm">
@@ -277,7 +302,7 @@
                     </div>
                     <div
                         class="text-size30 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center er-text-white mb:er-text-sm md:er-hidden">
-                        <select name="option" value="oura" class="er-w-full er-bg-transparent er-text-white er-text-center er-text-sm er-font-bold er-whitespace-normal er-break-words">
+                        <select name="option" value="oura" class="custom-select er-w-full er-bg-transparent er-text-white er-text-center er-text-sm er-font-bold">
                             <option value="oura" class="er-text-black">Oura Gen4</option>
                             <option value="sumsung" title="Samsung Galaxy Ring" class="er-text-black">Samsung Galaxy Ring</option>
                             <option value="apple" class="er-text-black">Apple Watch</option>
@@ -296,7 +321,7 @@
                         Titanium</div>
                     <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-sm">
                         3.3-5.2g</div>
-                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs er-px-2 er-max-w-min er-place-self-center">
+                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs er-px-2">
                         PPG,
                         IMU,<br>Temperature
                     </div>
@@ -372,7 +397,7 @@
                         Samsung<br>Galaxy Ring</div>
                     <div
                         class="text-size30 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center er-text-white mb:er-text-sm md:er-hidden">
-                        <select name="option" value="sumsung" class="er-w-full er-bg-transparent er-text-white er-text-center er-text-sm er-font-bold er-whitespace-normal er-break-words">
+                        <select name="option" value="sumsung" class="custom-select er-w-full er-bg-transparent er-text-white er-text-center er-text-sm er-font-bold">
                             <option value="oura" class="er-text-black">Oura Gen4</option>
                             <option value="sumsung" title="Samsung Galaxy Ring" class="er-text-black">Samsung Galaxy Ring</option>
                             <option value="apple" class="er-text-black">Apple Watch</option>
@@ -389,7 +414,7 @@
                         Titanium</div>
                     <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-sm">
                         2.3-3.2g</div>
-                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs er-max-w-min er-place-self-center">
+                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs">
                         PPG,
                         IMU,<br>Temperature
                     </div>
@@ -467,10 +492,10 @@
                     </div>
                     <div
                         class="text-size30 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center er-text-white mb:er-text-sm md:er-hidden">
-                        <select name="option" value="apple" class="er-w-full er-bg-transparent er-text-white er-text-center er-text-sm er-font-bold er-whitespace-normal er-break-words">
-                            <option value="oura" class="er-text-black">Oura Gen4</option>
-                            <option value="sumsung" title="Samsung Galaxy Ring" class="er-text-black">Samsung Galaxy Ring</option>
-                            <option value="apple" class="er-text-black">Apple Watch</option>
+                        <select name="option" value="apple" class="custom-select er-w-full er-bg-transparent er-text-white er-text-center er-text-sm er-font-bold">
+                            <option value="oura" class="er-text-black er-text-center">Oura Gen4</option>
+                            <option value="sumsung" title="Samsung Galaxy Ring" class="er-text-black er-text-center">Samsung Galaxy Ring</option>
+                            <option value="apple" class="er-text-black er-text-center">Apple Watch</option>
                         </select>
                     </div>
                     <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-sm">
@@ -484,7 +509,7 @@
                         Aluminum</div>
                     <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-sm">
                         35g</div>
-                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs er-max-w-min er-place-self-center">
+                    <div class="text-size18 er-h-16 mb:er-h-12 er-flex er-items-center er-justify-center mb:er-text-xs">
                         PPG,
                         IMU,<br>Temperature,
                         GPS
