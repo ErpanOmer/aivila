@@ -2340,7 +2340,7 @@ ul {
 
     .empty .bottom_text {
         margin: 0;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     .empty .bottom_felx p {}
@@ -4115,7 +4115,7 @@ ul {
     .container_twentythree .bottom_felx {
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     .container_twentythree .bottom_text p {}
