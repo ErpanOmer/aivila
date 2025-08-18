@@ -57,11 +57,12 @@ function subscribe(event) {
         })
         .then((data) => {
             console.log('成功:', data);
-            window.open('/pages/buy', '_blank');
         })
         .catch((error) => {
             console.error('请求失败:', error);
-        });
+        }).finally(() => {
+            window.location.href = '/pages/buy'; // 或 replace
+        })
 }
 
 // 获取所有订阅按钮并添加点击事件

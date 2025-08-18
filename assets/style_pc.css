@@ -21,9 +21,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .w-astrict {
+    /* .w-astrict {
         width: 768px !important
-    }
+    } */
 }
 
 @media screen and (max-width: 768px) {
