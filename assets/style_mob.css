@@ -2145,7 +2145,7 @@ ul {
     margin: 32px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -2333,7 +2333,7 @@ ul {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 16px;
     }
 
     .empty .bottom_text p {}
@@ -2699,8 +2699,7 @@ ul {
     }
 
     .container_four {
-        padding: 3.4%;
-        padding-bottom: 61px;
+        padding: 4vw 6vw 16vw;
         box-sizing: border-box;
     }
 
@@ -2733,7 +2732,7 @@ ul {
     .container_four .jindu_box {
         flex-direction: row-reverse;
         margin: 30px auto 0;
-        height: 649px;
+        /* height: 649px; */
     }
 
     .container_four .jindu_box .price_card {
@@ -3818,7 +3817,7 @@ ul {
     }
 
     .container_seventeen .bottom_title {
-        margin-top: 59px;
+        margin-top: 18px;
         margin-bottom: 18px;
         text-align: center;
     }
@@ -4107,7 +4106,7 @@ ul {
     }
 
     .container_twentythree .bottom_title {
-        margin-top: 59px;
+        margin-top: 18px;
         margin-bottom: 18px;
         text-align: center;
     }
@@ -4115,7 +4114,7 @@ ul {
     .container_twentythree .bottom_felx {
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 30px;
+        margin-top: 16px;
     }
 
     .container_twentythree .bottom_text p {}

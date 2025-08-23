@@ -3124,7 +3124,7 @@ img {
 }
 
 .container_twentythree .text .bottom_text {
-    margin-top: clamp(7.2px, 1vw, 12.8px);
+    /* margin-top: clamp(7.2px, 1vw, 12.8px); */
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -3144,7 +3144,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 40px;
+    margin-top: 16px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center

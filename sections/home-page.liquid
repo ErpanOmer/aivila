@@ -31,30 +31,43 @@
       outline: none;
     }
 
-    .s {
-            background: linear-gradient(to right, #097fc7, #01c8e2);
-            border-radius: clamp(21.6px, 3vw, 38.4px);
-            color: #fff;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 2;
-            transition: all .3s;
-            font-size: 32px;
-            font-weight: 500;
-            padding: 0 60px;
-            margin-top: 24px;
-            text-align: center;
+    .countdown {
+        background: linear-gradient(to right, #097fc7, #01c8e2);
+        padding: 10px 50px;
+        border-radius: 75px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .countdown img {
+        width: 400px;
+        transform: translateY(13.5px);
+        position: relative;
+        z-index: 0;
+    }
+
+    .countdown > div {
+        position: absolute;
+        z-index: 1;
+        height: 20px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #097fc7, #01c8e2);
     }
 
     @media (max-width: 768px) {
-        .s {
-                font-size: 18px;
-                padding: 4vw;
-                line-height: 1.5;
-                margin-top: 16px;
-                width: 92%;
+        .countdown {
+            padding: 7.5px 30px;
+        }
+
+        .countdown > div {
+            height: 15px;
+        }
+
+        .countdown img {
+            transform: translateY(10px);
         }
     }
   </style>
@@ -67,6 +80,76 @@
             <video id="video_one" class="PC" src="https://cdn.shopify.com/videos/c/o/v/3144e4a540324706beefaff83b85e708.mp4" autoplay muted></video>
             <video id="video_two" class="MOB" src="https://cdn.shopify.com/videos/c/o/v/1d75aa1899d94a7aaa546454ede7b5df.mp4" autoplay muted x5-playsinline="true" playsinline="true" webkit-playsinline="true"></video>
             <div class="video-in-shadow PC"></div>
+        </div>
+    </section>
+        <!-- container_four -->
+    <section class="section_view">
+        <div class="empty container_four">
+            <div class="w-astrict">
+                <div class="text-size48 er-font-light mb:er-text-3xl er-text-center">
+                    Launching on <img width="328" class="mb:er-mt-2" height="36" loading="lazy" src="{{ 'Kickstarter_logo_2019_svg.svg' | asset_url }}" alt="">
+                </div>
+                <div class="text-size36 er-my-1 er-text-center mb:er-text-base">at September 5th, 2025 — 12:00 UTC</div>
+                <div class="text-size36 er-font-light er-text-center mb:er-text-base">(8:00 PM Singapore / 8:00 AM New York / 2:00 PM Berlin)</div>
+                <div class="countdown er-my-8 mb:er-my-4">
+                    <img src="https://i.countdownmail.com/4fmw4n.gif" alt="">
+                    <div></div>
+                </div>
+                <div class="text-size36 er-text-center mb:er-text-base">Pay $9.9 today and save $49 at launch</div>
+                <div class="jindu_box">
+                <div class="er-grid er-grid-cols-5 mb:er-grid-cols-1 er-gap-3">
+                    <div class="er-flex er-rounded-3xl er-bg-[#121212] er-items-center er-p-6 er-col-span-2 er-pr-5 mb:er-col-span-1 mb:er-p-4">
+                        <div class="er-mr-6 er-flex er-flex-col er-h-full mb:er-mr-0">
+                            <div class="text-size30 er-font-medium mb:er-text-2xl">VIP DEAL</div>
+                            <div class="text-size18 er-font-poppins er-opacity-80 er-my-4 er-flex-1 mb:er-text-base mb:er-mb-0 mb:er-mt-2">Secure our lowest price ever, $49 lower than Super Early Bird Price.</div>
+                            <img width="125" class="md:er-hidden mb:!er-w-1/2 er-block mb:er-my-4 mb:er-self-center" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161301.png?v=1755850406" alt="">
+                            <div class="er-flex er-justify-between er-whitespace-nowrap">
+                                <div class="text-size30 er-font-extrabold er-text-[#01C8E2] mb:er-text-2xl">$99</div>
+                                <div class="text-size30 er-font-medium er-text-[#B2AFAF] mb:er-text-2xl">MSRP $249</div>
+                            </div>
+                        </div>
+                        <img width="125" class="mb:er-hidden" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161301.png?v=1755850406" alt="">
+                    </div>
+                    <div class="er-flex er-rounded-3xl er-bg-[#121212] er-items-center er-p-6 er-col-span-3 mb:er-col-span-1 mb:er-p-4">
+                        <div class="er-mr-7 er-flex er-flex-col er-h-full mb:er-mr-0">
+                            <div class="text-size30 er-font-medium mb:er-text-2xl">EXCLUSIVE GIFT</div>
+                            <div class="text-size18 er-font-poppins er-opacity-80 er-my-4 er-flex-1 mb:er-text-base mb:er-mb-0 mb:er-mt-2">Get a free charging case and sizing kit, power your ring anywhere, anytime.</div>
+                            <img width="300" class="md:er-hidden er-block mb:er-my-4 mb:er-self-center" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161307.png?v=1755850406" alt="">
+                            <div class="er-flex er-justify-between er-whitespace-nowrap">
+                                <div class="text-size30 er-font-extrabold er-text-[#01C8E2] mb:er-text-2xl">Free</div>
+                                <div class="text-size30 er-font-medium er-text-[#B2AFAF] mb:er-text-2xl">MSRP $49</div>
+                            </div>
+                        </div>
+                        <img width="300" class="mb:er-hidden" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161307.png?v=1755850406" alt="">
+                    </div>
+                </div>
+                    <div class="line">
+                        <div>
+                            <i class="cff cfs-md">1</i>
+                            <span class="cff cfs-xl fw-light _size_desc2">Seize the offer<br>by paying $9.9</span>
+                        </div>
+                        <div>
+                            <i class="cff cfs-md">2</i>
+                            <span class="cff cfs-xl fw-light _size_desc2">Get a secret link of $99<br>at launch on Kickstarter</span>
+                        </div>
+                        <div>
+                            <i class="cff cfs-md">3</i>
+                            <span class="cff cfs-xl fw-light _size_desc2">Back us and enjoy<br>priority delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe mb:!er-mt-10">
+                    <input type="text" class="mb:!er-text-lg" placeholder="input your email..." type="email" />
+                    <button class="tff tfs-md mb:!er-text-lg">Reserve Now</button>
+                </div>
+                <div class="email_error_tips _size_desc2">
+                    Server is Busy, Please Entry Your Email Again.
+                </div>
+                <div class="er-font-poppins er-my-5 tfs-xss er-font-light er-text-center">✅ 100% Refundable | 🎁 VIP Gift Included | 🚀 Limited Spots</div>
+                <div class="small_text cff cfs-xl fw-light _size_desc2" style="color: #4D4D4D;">Check Your Mailbox or
+                    Spambox to Avoid Missing Our Updates!</div>
+            </div>
+
         </div>
     </section>
     <!-- container_three -->
@@ -596,47 +679,47 @@
             </div>
         </div>
     </section>
-
-    <!-- container_four -->
+        <!-- container_four -->
     <section class="section_view">
         <div class="empty container_four">
             <div class="w-astrict">
-                <div class="title">
-                    <span class="tff tfs-xxl fw-light _size_title1 mb:er-mb-4">Reserve Now, Enjoy Exclusive Price</span>
-                    
+                <div class="text-size48 er-font-light mb:er-text-3xl er-text-center">
+                    Launching on <img width="328" class="mb:er-mt-2" height="36" loading="lazy" src="{{ 'Kickstarter_logo_2019_svg.svg' | asset_url }}" alt="">
                 </div>
-                <div class="reserve tff tfs-md fw-bold _size_desc1">
-                    Pay $9.9 today and save $49 at launch on<img width="328" class="mb:er-mt-2" height="36" loading="lazy" src="{{ 'Kickstarter_logo_2019_svg.svg' | asset_url }}" alt="">
+                <div class="text-size36 er-my-1 er-text-center mb:er-text-base">at September 5th, 2025 — 12:00 UTC</div>
+                <div class="text-size36 er-font-light er-text-center mb:er-text-base">(8:00 PM Singapore / 8:00 AM New York / 2:00 PM Berlin)</div>
+                <div class="countdown er-my-8 mb:er-my-4">
+                    <img src="https://i.countdownmail.com/4fmw4n.gif" alt="">
+                    <div></div>
                 </div>
-                <div class="s">Launching on Sept 5th, <br class="md:er-hidden">Don't Miss the Deal !!!</div>
+                <div class="text-size36 er-text-center mb:er-text-base">Pay $9.9 today and save $49 at launch</div>
                 <div class="jindu_box">
-                    <div class="price_card">
-                        <div class="price_card_right">
-                            <div class="info_1">
-                                <div class="title tff tfs-md fw-medium _size_title1 er-font-medium">VIP DEAL</div>
-                            <p class="cff cfs-lg fw-light _size_desc1 er-leading-normal">Secure our lowest price ever, $49 lower than Super Early Bird Price.</p>
-                            <span class="er-flex-1"></span>
-                            <div class="price">
-                                <div class="price_left tff tfs-md fw-bold fw-extra-bold _size_title2">$99</div>
-                                <div class="price_right tff tfs-md fw-bold fw-medium _size_title2">MSRP $249</div>
+                <div class="er-grid er-grid-cols-5 mb:er-grid-cols-1 er-gap-3">
+                    <div class="er-flex er-rounded-3xl er-bg-[#121212] er-items-center er-p-6 er-col-span-2 er-pr-5 mb:er-col-span-1 mb:er-p-4">
+                        <div class="er-mr-6 er-flex er-flex-col er-h-full mb:er-mr-0">
+                            <div class="text-size30 er-font-medium mb:er-text-2xl">VIP DEAL</div>
+                            <div class="text-size18 er-font-poppins er-opacity-80 er-my-4 er-flex-1 mb:er-text-base mb:er-mb-0 mb:er-mt-2">Secure our lowest price ever, $49 lower than Super Early Bird Price.</div>
+                            <img width="125" class="md:er-hidden mb:!er-w-1/2 er-block mb:er-my-4 mb:er-self-center" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161301.png?v=1755850406" alt="">
+                            <div class="er-flex er-justify-between er-whitespace-nowrap">
+                                <div class="text-size30 er-font-extrabold er-text-[#01C8E2] mb:er-text-2xl">$99</div>
+                                <div class="text-size30 er-font-medium er-text-[#B2AFAF] mb:er-text-2xl">MSRP $249</div>
                             </div>
-                            </div>
-                            <img class="er-translate-y-3" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/2_2x_11dc74df-7a3f-442c-a11e-4fb5b7b7eecc.png?v=1752489339" alt="">
                         </div>
-                        <div class="price_card_right">
-                            <div class="info_1">
-                                <div>
-                                    <div class="title tff tfs-md fw-medium _size_title1 er-font-medium">EXCLUSIVE GIFT</div>
-                                    <p class="cff cfs-lg fw-light _size_desc1 er-leading-normal">Get a free charging case, power your ring anywhere, anytime.</p>
-                                </div>
-                                <div class="price">
-                                    <div class="price_left tff tfs-md fw-bold fw-extra-bold _size_title2">Free</div>
-                                    <div class="price_right tff tfs-md fw-bold fw-medium _size_title2">MSRP $49</div>
-                                </div>
-                            </div>
-                            <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/1_i1_0082_2x_5ce05750-b079-4b88-96c2-1c9a17d59f3a.png?v=1752489355" alt="">
-                        </div>
+                        <img width="125" class="mb:er-hidden" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161301.png?v=1755850406" alt="">
                     </div>
+                    <div class="er-flex er-rounded-3xl er-bg-[#121212] er-items-center er-p-6 er-col-span-3 mb:er-col-span-1 mb:er-p-4">
+                        <div class="er-mr-7 er-flex er-flex-col er-h-full mb:er-mr-0">
+                            <div class="text-size30 er-font-medium mb:er-text-2xl">EXCLUSIVE GIFT</div>
+                            <div class="text-size18 er-font-poppins er-opacity-80 er-my-4 er-flex-1 mb:er-text-base mb:er-mb-0 mb:er-mt-2">Get a free charging case and sizing kit, power your ring anywhere, anytime.</div>
+                            <img width="300" class="md:er-hidden er-block mb:er-my-4 mb:er-self-center" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161307.png?v=1755850406" alt="">
+                            <div class="er-flex er-justify-between er-whitespace-nowrap">
+                                <div class="text-size30 er-font-extrabold er-text-[#01C8E2] mb:er-text-2xl">Free</div>
+                                <div class="text-size30 er-font-medium er-text-[#B2AFAF] mb:er-text-2xl">MSRP $49</div>
+                            </div>
+                        </div>
+                        <img width="300" class="mb:er-hidden" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20250822-161307.png?v=1755850406" alt="">
+                    </div>
+                </div>
                     <div class="line">
                         <div>
                             <i class="cff cfs-md">1</i>
@@ -1452,12 +1535,16 @@
     <section class="section_view">
         <div class="empty container_seventeen">
             <div class="w-astrict">
+                <div class="countdown mb:er-mt-12">
+                    <h6 class="text-size30 er-font-medium er-text-center er-mt-1 er-rounded-full mb:er-text-2xl">Launching in</h6>
+                    <img src="https://i.countdownmail.com/4fmw4n.gif" alt="">
+                    <div></div>
+                </div>
                 <div class="bottom_title tff tfs-xxl _size_title1 er-font-light">Reserve Now, Enjoy Exclusive Price
                 </div>
                 <div class="bottom_text cff cfs-xl fw-light _size_desc1 er-text-center">
                    Pay $9.9 today and save $49 at launch on<img width="328" class="mb:!er-mt-2" height="36" loading="lazy" src="{{ 'Kickstarter_logo_2019_svg.svg' | asset_url }}" alt="">
                 </div>
-                <div class="s">Launching on Sept 5th, <br class="md:er-hidden">Don't Miss the Deal !!!</div>
                 <div class="bottom_felx cff cfs-xl fw-light _size_desc1">
                     <p>✅ 100% Refundable</p>
                     <p class="p_line">|</p>
@@ -1792,13 +1879,17 @@
     <!-- container_twentythree -->
     <section class="section_view">
         <div class="empty container_twentythree">
-            <img src="{{ 'Group_76.png' | file_url }}" alt="">
+            <img class="er-block er-h-[600px] er-object-cover" src="{{ 'Group_76.png' | file_url }}" alt="">
             <div class="w-astrict text">
-                <div class="bottom_title tff tfs-xxl fw-extra-bold fw-bold  _size_title1 er-font-light">Reserve Now, Enjoy Exclusive Price</div>
+                <div class="countdown">
+                    <h6 class="text-size30 er-font-medium er-text-center er-mt-1 er-rounded-full mb:er-text-2xl">Launching in</h6>
+                    <img src="https://i.countdownmail.com/4fmw4n.gif" alt="">
+                    <div></div>
+                </div>
+                <div class="bottom_title tff tfs-xxl _size_title1 er-font-light">Reserve Now, Enjoy Exclusive Price</div>
                 <div class="bottom_text cff cfs-xl fw-light _size_desc1 er-font-bold er-text-center">
                    Pay $9.9 today and save $49 at launch on <img width="328" class="mb:!er-mt-2" height="36" loading="lazy" src="{{ 'Kickstarter_logo_2019_svg.svg' | asset_url }}" alt="">
                 </div>
-                <div class="s">Launching on Sept 5th, <br class="md:er-hidden">Don't Miss the Deal !!!</div>
                 <div class="bottom_felx cff cfs-xl fw-light _size_desc1">
                     <p>✅ 100% Refundable</p>
                     <p class="p_line">|</p>
