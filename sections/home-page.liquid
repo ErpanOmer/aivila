@@ -92,42 +92,8 @@
     text-decoration: none;
   }
 
-  .navbar .nav-buttons {
-    display: flex;
-    gap: 10px;
-  }
-
-  .navbar button {
-    padding: 8px 16px;
-    background-color: #555;
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .navbar button:hover {
-    background-color: #777;
-  }
-
-  /* 占位元素，避免内容被导航栏遮挡 */
-  .content {
-    margin-top: 64px; 
-    padding: 20px;
-  }
-
   /* 响应式，手机端按钮适当缩小 */
   @media (max-width: 600px) {
-    .navbar button {
-      padding: 6px 12px;
-      font-size: 14px;
-    }
-
-    .navbar .logo {
-      font-size: 18px;
-    }
-
     .navbar .centeral-content > div .text-size20 {
         flex-direction: column;
     }
