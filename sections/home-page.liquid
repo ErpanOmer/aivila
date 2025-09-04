@@ -57,6 +57,65 @@
         background: linear-gradient(to right, #097fc7, #01c8e2);
     }
 
+
+    /* 顶部导航栏样式 */
+  .navbar {
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000; /* 保证导航栏在最上层 */
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .navbar .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar button {
+    padding: 8px 16px;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .navbar button:hover {
+    background-color: #777;
+  }
+
+  /* 占位元素，避免内容被导航栏遮挡 */
+  .content {
+    margin-top: 64px; 
+    padding: 20px;
+  }
+
+  /* 响应式，手机端按钮适当缩小 */
+  @media (max-width: 600px) {
+    .navbar button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    .navbar .logo {
+      font-size: 18px;
+    }
+  }
+
     @media (max-width: 768px) {
         .countdown {
             padding: 7.5px 30px;
@@ -71,6 +130,10 @@
         }
     }
   </style>
+<div class="navbar">
+  <div class="logo">LOGO</div>
+  <div>Back Us On</div>
+</div>
 <section class="section_view">
         <div class="empty container_one">
             <div class="c_one_logo">
