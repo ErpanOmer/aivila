@@ -1,0 +1,163 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_ite3aE": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_8UyKQR": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>AIVELA Media Kit<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_PMe848": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_9cH8AF": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Access Media Kit",
+            "button_link_1": "https:\/\/drive.google.com\/drive\/folders\/1Zkp3GcnUT-UKQElTN5pvTYPnhNRfvC7Y?usp=drive_link",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8UyKQR",
+        "text_PMe848",
+        "buttons_9cH8AF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6-1-c.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "newsletter_bNLq7R": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_YiTygf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to Receive Latest News",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_iwxxiw": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subscribe to receive latest news<\/p>"
+          }
+        },
+        "email_form_GJFmUn": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_YiTygf",
+        "paragraph_iwxxiw",
+        "email_form_GJFmUn"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_yWqVXx": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_FQdnad": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6TfAYy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_M3XPiB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Ma4qEB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "可折叠行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_FQdnad",
+        "collapsible_row_6TfAYy",
+        "collapsible_row_M3XPiB",
+        "collapsible_row_Ma4qEB"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "可折叠内容",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_ite3aE",
+    "newsletter_bNLq7R",
+    "collapsible_content_yWqVXx"
+  ]
+}
