@@ -149,7 +149,7 @@ img {
     align-items: center;
     width: 86%;
     margin: clamp(57.6px, 8vw, 102.4px) auto;
-    padding: 120px 0 140px;
+    padding: 120px 0 120px;
 }
 
 .container_two>div {
