@@ -80,7 +80,7 @@ ul {
     align-items: center;
     width: 86%;
     margin: clamp(57.6px, 8vw, 102.4px) auto;
-    padding: 80px 0 140px;
+    padding: 10% 0;
 }
 
 .container_two>div {
