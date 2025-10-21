@@ -18,13 +18,6 @@
             "heading_size": "h1"
           }
         },
-        "text_PMe848": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "subtitle"
-          }
-        },
         "buttons_9cH8AF": {
           "type": "buttons",
           "settings": {
@@ -39,7 +32,6 @@
       },
       "block_order": [
         "heading_8UyKQR",
-        "text_PMe848",
         "buttons_9cH8AF"
       ],
       "custom_css": [],
@@ -55,6 +47,37 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
+      }
+    },
+    "rich_text_QgWGMY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_McQz8h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h1"
+          }
+        },
+        "text_JXL6AG": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Contact Person:<\/strong> Rachel S.<br\/><strong>Title:<\/strong> Branding & PR Director<br\/><strong>Email:<\/strong> rachel@aivela.com<br\/><strong>Website:<\/strong> <a href=\"https:\/\/www.aivela.com\/\" title=\"https:\/\/www.aivela.com\/\">https:\/\/www.aivela.com\/<\/a><br\/>AI PLUS APPLIANCES INC<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_McQz8h",
+        "text_JXL6AG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "newsletter_bNLq7R": {
@@ -157,6 +180,7 @@
   "order": [
     "main",
     "image_banner_ite3aE",
+    "rich_text_QgWGMY",
     "newsletter_bNLq7R",
     "collapsible_content_yWqVXx"
   ]
