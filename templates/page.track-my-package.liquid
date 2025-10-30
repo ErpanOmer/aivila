@@ -1,4 +1,6 @@
-<div class="centeral-content er-flex er-flex-col er-items-center">
+{{ 'jquery.js' |  asset_url | script_tag }}
+<div style="height: 100vh;width: 100vw;display: flex;align-items: center;justify-content: center;">
+  <div class="centeral-content er-flex er-flex-col er-items-center mb:er-mx-0 mb:er-w-full">
   <h1 class="text-size36 er-text-center er-my-20 mb:er-text-5xl">Track My Package</h1>
   <form
     class="er-flex er-flex-col er-items-start er-space-y-12 mb:er-space-y-8 er-w-full er-max-w-xl er-mx-auto er-mb-48"
@@ -19,7 +21,7 @@
         required
       >
     </div>
-    <div class="er-flex er-flex-col er-items-start er-space-y-3 mb:er-space-y-2 er-w-full er-max-w-xl">
+    {% comment %} <div class="er-flex er-flex-col er-items-start er-space-y-3 mb:er-space-y-2 er-w-full er-max-w-xl">
       <label for="ordernumber"
         ><b>Order Number (like: 10010) <sup class="er-text-primary">*</sup></b></label
       >
@@ -31,10 +33,11 @@
         placeholder="Enter your order number"
         required
       >
-    </div>
+    </div> {% endcomment %}
     <div class="tips er-text-primary text-size16 mb:er-text-2xl er-hidden">Sorry😔, No order information found, please check and try again!</div>
     <button class="er-button er-w-full" type="submit">Submit</button>
   </form>
+</div>
 </div>
 
 <script type="module">
