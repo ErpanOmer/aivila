@@ -1,0 +1,61 @@
+<div class="centeral-content er-flex er-flex-col er-items-center">
+  <h1 class="text-size36 er-text-center er-my-20 mb:er-text-5xl">Track My Package</h1>
+  <form
+    class="er-flex er-flex-col er-items-start er-space-y-12 mb:er-space-y-8 er-w-full er-max-w-xl er-mx-auto er-mb-48"
+    method="post"
+    action="/contact#contact_form"
+    id="track_form"
+  >
+    <div class="er-flex er-flex-col er-items-start er-space-y-3 mb:er-space-y-2 er-w-full er-max-w-xl">
+      <label for="email"
+        ><b>Email <sup class="er-text-primary">*</sup></b></label
+      >
+      <input
+        class="mb:er-text-2xl er-box-border er-font-base er-w-full er-border-2 er-border-dark/30 placeholder:er-text-black/15 er-border-solid er-rounded-xl er-text-dark/85 er-text-3xl er-p-4 focus:er-border-primary/80 focus-visible:er-border-primary/80 focus:er-ring-primary focus:er-shadow-primary"
+        type="email"
+        id="user_email"
+        name="user_email"
+        placeholder="Enter your email"
+        required
+      >
+    </div>
+    <div class="er-flex er-flex-col er-items-start er-space-y-3 mb:er-space-y-2 er-w-full er-max-w-xl">
+      <label for="ordernumber"
+        ><b>Order Number (like: 10010) <sup class="er-text-primary">*</sup></b></label
+      >
+      <input
+        class="mb:er-text-2xl er-box-border er-font-base er-w-full er-border-2 er-border-dark/30 placeholder:er-text-black/15 er-border-solid er-rounded-xl er-text-dark/85 er-text-3xl er-p-4 focus:er-border-primary/80 focus-visible:er-border-primary/80 focus:er-ring-primary focus:er-shadow-primary"
+        type="text"
+        id="order_number"
+        name="order_number"
+        placeholder="Enter your order number"
+        required
+      >
+    </div>
+    <div class="tips er-text-primary text-size16 mb:er-text-2xl er-hidden">Sorry😔, No order information found, please check and try again!</div>
+    <button class="er-button er-w-full" type="submit">Submit</button>
+  </form>
+</div>
+
+<script type="module">
+  $('#track_form').submit(function (e) {
+    $('.tips').hide()
+    const queryString = $('#track_form').serialize();
+
+    fetch(`http://api-test.newurtopia.com/aivela-api/third_party/order_tracking?${queryString}`).then(r => r.json()).then(r => {
+      console.log(r)
+
+      if (!r.data) {
+        return $('.tips').show()
+      }
+
+      window.location.href = r.data
+    }).catch((e) => {
+      console.log(e);
+      $('.tips').show()
+    })
+
+    e.preventDefault();
+    return false;
+  });
+</script>
