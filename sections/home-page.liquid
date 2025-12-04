@@ -79,6 +79,25 @@
     height: 64px;
   }
 
+   .section_view_one {
+        height: calc(100vh - 111px);
+        padding-top: 9vh;
+        padding-bottom: 6vh;
+   }
+
+  .section_view_one .centeral-content {
+    height: 100%;
+  }
+
+  .subscribe {
+    width: 50%;
+  }
+
+  .subscribe input {
+    padding: 1.2% 5%;
+    margin-right: 10px;
+  }
+
     @media (max-width: 768px) {
         .countdown {
             padding: 7.5px 30px;
@@ -91,30 +110,38 @@
         .countdown img {
             transform: translateY(10px);
         }
-    }
+
+        .section_view_one {
+            height: 600px;
+            padding-bottom: 3vh;
+        }
+
+        .section_view_one .centeral-content {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .subscribe {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .subscribe input { 
+            padding: 2.2% 5%;
+            margin-right: 0;
+            margin-bottom: 10px;  
+        }
+
+        .subscribe button { 
+              padding: 2.2% 5%;
+        }
+}
   </style>
   <div class="navbar">
     <div class="centeral-content mb:er-px-4">
         <div>
           <div>
             <div class="text-size24 mb:er-text-xl er-mb-1">AIVELA Ring Pro</div>
-            <svg width="160" height="19" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#E2B520"/>
-                    <stop offset="19%" stop-color="#F2D981"/>
-                    <stop offset="37%" stop-color="#CEB13D"/>
-                    <stop offset="59%" stop-color="#D9C15D"/>
-                    <stop offset="70%" stop-color="#C4A72B"/>
-                    <stop offset="85%" stop-color="#E8D896"/>
-                    <stop offset="100%" stop-color="#C9A81C"/>
-                    </linearGradient>
-                </defs>
-                <text x="50%" y="60%" text-anchor="middle"
-                        fill="url(#gold-gradient)">
-                    Black Friday Special
-                </text>
-                </svg>
           </div>
           <a target="_blank" href="https://www.kickstarter.com/projects/ldh/aivela-ring-pro-all-in-one-smart-ring-to-master-your-day" class="text-size20 er-font-medium er-gap-x-1 er-h-10 er-px-5 er-flex er-items-center er-justify-center er-box-border er-text-inherit er-rounded-[60px] er-no-underline mb:er-flex-col mb:er-pb-1" style="background-image: linear-gradient(90deg, #09CD78, #046F41);">
             <div class="mb:er-text-[14px]">Buy Now on</div>
@@ -124,16 +151,48 @@
         </div>
     </div>
 </div>
-<section class="section_view">
-        <div class="empty container_one">
-            <div class="c_one_logo">
-                <img src="{{ 'Component3_1.png' | file_url }}" alt="">
-                <p class="tfs-sm tff fw-extra-light _size_title2 er-font-extralight">Clarity, Control, Comfort</p>
+    <section class="section_view_one background-image">
+        <picture>
+            <source media="(min-width: 768px)"
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251204-152223.jpg?v=1764834325">
+            <source media="(max-width: 768px)"
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251204-152231.jpg?v=1764834325">
+            <img src="" alt="CES 2026 Hero Image">
+        </picture> 
+         <!-- Hero Content Container -->
+            <div class="centeral-content er-relative er-text-center er-flex er-flex-col er-justify-center er-items-center">
+                
+                <!-- Main Headline -->
+                <h1 class="text-size48 er-font-bold er-text-white er-mb-4 mb:er-text-2xl mb:er-mb-2">
+                    Your Wearable<br>
+                    AI Health Companion
+                </h1>
+                
+                <!-- CES Invitation Text -->
+                <div class="er-mb-4 mb:er-mb-2">
+                    <span class="text-size30 er-font-semibold mb:er-text-2xl" style="background: linear-gradient(90deg, #FF31D8 0%, #3F62F0 51%, #22BBE6 92%, #01B7E2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 0.05em;">
+                        CES 2026 INVITAION
+                    </span>
+                </div>
+                
+                <!-- Event Details -->
+                <div class="er-text-white text-size30 er-font-light er-opacity-95 mb:er-text-base">
+                    Jan 6-9, 2026 | Las Vegas
+                </div>
+                <div class="er-text-white text-size30 er-font-light er-opacity-90 mb:er-text-base">
+                    Booth No. #52362, Venetian Expo, Halls A-D
+                </div>
+                <span class="er-flex-1"></span>
+               <div class="subscribe">
+                    <input type="text" class="mb:!er-text-lg" placeholder="input your email..." type="email" />
+                    <button style="background: linear-gradient(73deg, #FF31D8 0%, #3F62F0 51%, #22BBE6 97%, #01B7E2 100%); border: 1px solid #fff;" class="tff tfs-md mb:!er-text-lg">Subscribe</button>
+                </div>
+                
+                <!-- Footer Text -->
+                <p class="er-text-white er-opacity-80 text-size20 er-mt-5 er-font-poppins mb:er-text-base">
+                    Be the first one to receive all the exciting updates!
+                </p>
             </div>
-            <video id="video_one" class="PC" src="https://cdn.shopify.com/videos/c/o/v/3144e4a540324706beefaff83b85e708.mp4" autoplay muted></video>
-            <video id="video_two" class="MOB" src="https://cdn.shopify.com/videos/c/o/v/1d75aa1899d94a7aaa546454ede7b5df.mp4" autoplay muted x5-playsinline="true" playsinline="true" webkit-playsinline="true"></video>
-            <div class="video-in-shadow PC"></div>
-        </div>
     </section>
     <!-- container_three -->
     <section class="section_view">
@@ -662,39 +721,53 @@
             </div>
         </div>
     </section>
-<section class="er-bg-black background-image er-py-24 mb:er-py-6 er-text-white">
-    <div class="centeral-content mb:er-px-4">
-        <picture>
+<section class="er-bg-black background-image er-px-12 er-py-36 mb:er-px-4 mb:er-py-12">
+        {% comment %} <picture>
             <source media="(min-width: 768px)"
-                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-141202.png?v=1763014344">
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/13.png?v=1761013020">
             <source media="(max-width: 768px)"
-                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140704.png?v=1763014119">
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/14.png?v=1761013020">
             <img src="" alt="">
-        </picture>
-        <div class="er-px-20 er-py-12 mb:er-p-8 er-rounded-[100px] mb:er-rounded-[20px]" style="box-shadow: inset 0px 0px 10px #FA3C02, 0px 3px 6px #FA6B02;">
-            <h2 class="text-size48 er-text-center er-mb-16 mb:er-text-2xl mb:er-mb-6">For Every Late Pledge Backer:</h2>
-            <div class="er-flex er-items-center er-gap-x-12 mb:er-flex-col">
-                <div class="er-place-self-start mb:er-text-center">
-                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140729.png?v=1763014119" alt="">
-                    <div class="text-size30 er-mt-6 mb:er-text-xl">Get a FREE $25 T-shirt</div>
+        </picture> {% endcomment %}
+        <div class="er-grid er-grid-cols-5 mb:er-grid-cols-2 mb:er-gap-4">
+            <img class="er-object-cover er-rounded-3xl mb:er-rounded" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/2_dfc0c028-b7a5-4d58-a358-8217eb57daf2.png?v=1761013018" loading="lazy" alt="">
+            <div class="er-col-span-3 er-px-[4%] mb:er-order-1 mb:er-px-0 mb:er-col-span-2">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/3.png?v=1761013019" loading="lazy" alt=""></img>
+            </div>
+            <img class="er-object-cover er-rounded-3xl mb:er-rounded" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/4.png?v=1761013018" loading="lazy" alt=""></img>
+        </div>
+        <div class="er-grid er-grid-cols-6 er-mt-28 er-gap-x-[2.5%] mb:er-grid-cols-1 mb:er-my-0 er-box-border">
+            <div class="er-flex er-flex-col er-gap-y-12 mb:er-hidden">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/5.png?v=1761013018" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/7.png?v=1761013018" alt="">
+            </div>
+            <div class="er-col-span-4 er-flex er-flex-col er-box-border">
+                <div class="er-box-border er-flex-1 er-text-white er-flex er-flex-col er-items-center er-justify-center er-text-center er-gap-y-4 er-translate-y-[-20%] mb:er-translate-y-0 mb:er-my-10 mb:er-gap-y-4">
+                    <h3 class="text-size36 er-font-light mb:er-text-xl">Crowdfunding Campaign Successfully Closed</h3>
+                    <div class="text-size48 mb:er-text-xl" style="background: linear-gradient(90deg, rgb(222, 35, 3), rgb(100, 53, 188), rgb(49, 109, 523));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$835,925 Raised 5,199 Backers</div>
+                    <a class="er-box-border er-border er-border-[#09CD78] er-border-solid er-flex er-rounded-full er-items-center er-text-white er-cursor-pointer er-pr-8 mb:er-pr-4" style="text-decoration: none;" target="_blank" href="https://www.kickstarter.com/projects/ldh/aivela-ring-pro-all-in-one-smart-ring-to-master-your-day">
+                        <div class="er-box-border text-size24 er-font-light er-h-full er-py-4 er-px-6 er-rounded-full mb:er-text-sm mb:er-px-4 mb:er-py-2" style="background-image: linear-gradient(90deg, #09CD78, #046F41);scale: 1.04;">Late Pledge Available at <span class="er-font-bold">$179</span></div>
+                        <img width="250" class="er-block er-box-border er-pl-8 mb:er-max-w-36 mb:er-pl-4" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/kickstarter-logo-green.png?v=1756968805" alt="">
+                        <svg class="mb:er-max-w-4" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#09CD78"><path d="M258.39-232.11 194.5-296 573-674.5H236.89v-91h491v491h-91v-336.11l-378.5 378.5Z"></path></svg>
+                    </a> 
                 </div>
-                <img width="150" class="er-mb-40 mb:er-my-8 mb:er-max-w-24" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140721.png?v=1763014119" alt="">
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140713.png?v=1763014119" alt="">
-                    <div class="text-size30 er-mt-6 mb:er-text-xl">Receive a $179 Coupon for Our Partner Brand Urtopia</div>
-                    <a class="text-size18 er-block er-mt-8 mb:er-text-base mb:er-mt-4" style="color: #d8d8d8;" href="https://newurtopia.com/products/urtopia-carbon-classic-ebike?variant=47235622502648">newurtopia.com<i><br>(It’s like buying a bike and getting a FREE ring!)</i></a>
+                <div class="md:er-hidden er-grid er-grid-cols-2 er-gap-4 er-mb-4">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/7.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/8.png?v=1761013018" alt="">
+                </div>
+                <div class="er-grid er-grid-cols-4 er-gap-x-[3%] mb:er-grid-cols-3 mb:er-gap-4">
+                    <img class="mb:er-hidden" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/9.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/10.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/11.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/12.png?v=1761013019" alt="">
                 </div>
             </div>
+            <div class="er-flex er-flex-col er-gap-y-12 mb:er-hidden">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/6.png?v=1761013018" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/8.png?v=1761013018" alt="">
+            </div>
         </div>
-         <div class="er-flex er-items-center er-justify-center er-mt-16 mb:er-mt-8">
-            <a target="_blank" href="https://www.kickstarter.com/projects/ldh/aivela-ring-pro-all-in-one-smart-ring-to-master-your-day" class="mb:er-w-full mb:er-py-2 mb:er-px-4 text-size20 er-font-medium er-gap-x-2 mb:er-gap-x-1 er-py-5 er-px-10 er-flex er-items-center er-justify-center er-box-border er-text-inherit er-rounded-[60px] er-no-underline" style="background-image: linear-gradient(90deg, #09CD78, #046F41);">
-            <div class="text-size30 er-font-medium mb:er-text-base er-whitespace-nowrap">Back Us On</div>
-            <img width="300" class="mb:er-max-w-40" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/kickstarter-logo-white.png?v=1756966581" alt="">
-            <svg class="mb:er-max-w-7" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#fff"><path d="M258.39-232.11 194.5-296 573-674.5H236.89v-91h491v491h-91v-336.11l-378.5 378.5Z"/></svg>
-          </a>
-         </div>
-    </div>
-</section>
+    </section>
         <!-- container_two -->
     <section class="section_view">
         <div class="empty container_two er-relative">
@@ -1476,40 +1549,53 @@
             </div>
         </div>
     </section>
-
-<section class="er-bg-black background-image er-py-24 mb:er-py-12 er-text-white">
-    <div class="centeral-content mb:er-px-4">
-        <picture>
+<section class="er-bg-black background-image er-px-12 er-py-24 mb:er-px-4 mb:er-py-16">
+        {% comment %} <picture>
             <source media="(min-width: 768px)"
-                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-141202.png?v=1763014344">
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/13.png?v=1761013020">
             <source media="(max-width: 768px)"
-                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140704.png?v=1763014119">
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/14.png?v=1761013020">
             <img src="" alt="">
-        </picture>
-        <div class="er-px-20 er-py-12 mb:er-p-8 er-rounded-[100px] mb:er-rounded-[20px]" style="box-shadow: inset 0px 0px 10px #FA3C02, 0px 3px 6px #FA6B02;">
-            <h2 class="text-size48 er-text-center er-mb-16 mb:er-text-2xl mb:er-mb-6">For Every Late Pledge Backer:</h2>
-            <div class="er-flex er-items-center er-gap-x-12 mb:er-flex-col">
-                <div class="er-place-self-start mb:er-text-center">
-                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140729.png?v=1763014119" alt="">
-                    <div class="text-size30 er-mt-6 mb:er-text-xl">Get a FREE $25 T-shirt</div>
+        </picture> {% endcomment %}
+        <div class="er-grid er-grid-cols-5 mb:er-grid-cols-2 mb:er-gap-4">
+            <img class="er-object-cover er-rounded-3xl mb:er-rounded" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/2_dfc0c028-b7a5-4d58-a358-8217eb57daf2.png?v=1761013018" loading="lazy" alt="">
+            <div class="er-col-span-3 er-px-[4%] mb:er-order-1 mb:er-px-0 mb:er-col-span-2">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/3.png?v=1761013019" loading="lazy" alt=""></img>
+            </div>
+            <img class="er-object-cover er-rounded-3xl mb:er-rounded" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/4.png?v=1761013018" loading="lazy" alt=""></img>
+        </div>
+        <div class="er-grid er-grid-cols-6 er-mt-28 er-gap-x-[2.5%] mb:er-grid-cols-1 mb:er-my-0 er-box-border">
+            <div class="er-flex er-flex-col er-gap-y-12 mb:er-hidden">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/5.png?v=1761013018" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/7.png?v=1761013018" alt="">
+            </div>
+            <div class="er-col-span-4 er-flex er-flex-col er-box-border">
+                <div class="er-box-border er-flex-1 er-text-white er-flex er-flex-col er-items-center er-justify-center er-text-center er-gap-y-4 er-translate-y-[-20%] mb:er-translate-y-0 mb:er-my-10 mb:er-gap-y-4">
+                    <h3 class="text-size36 er-font-light mb:er-text-xl">Crowdfunding Campaign Successfully Closed</h3>
+                    <div class="text-size48 mb:er-text-xl" style="background: linear-gradient(90deg, rgb(222, 35, 3), rgb(100, 53, 188), rgb(49, 109, 523));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$835,925 Raised 5,199 Backers</div>
+                    <a class="er-box-border er-border er-border-[#09CD78] er-border-solid er-flex er-rounded-full er-items-center er-text-white er-cursor-pointer er-pr-8 mb:er-pr-4" style="text-decoration: none;" target="_blank" href="https://www.kickstarter.com/projects/ldh/aivela-ring-pro-all-in-one-smart-ring-to-master-your-day">
+                        <div class="er-box-border text-size24 er-font-light er-h-full er-py-4 er-px-6 er-rounded-full mb:er-text-sm mb:er-px-4 mb:er-py-2" style="background-image: linear-gradient(90deg, #09CD78, #046F41);scale: 1.04;">Late Pledge Available at <span class="er-font-bold">$179</span></div>
+                        <img width="250" class="er-block er-box-border er-pl-8 mb:er-max-w-36 mb:er-pl-4" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/kickstarter-logo-green.png?v=1756968805" alt="">
+                        <svg class="mb:er-max-w-4" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#09CD78"><path d="M258.39-232.11 194.5-296 573-674.5H236.89v-91h491v491h-91v-336.11l-378.5 378.5Z"></path></svg>
+                    </a> 
                 </div>
-                <img width="150" class="er-mb-40 mb:er-my-8 mb:er-max-w-24" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140721.png?v=1763014119" alt="">
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140713.png?v=1763014119" alt="">
-                    <div class="text-size30 er-mt-6 mb:er-text-xl">Receive a $179 Coupon for Our Partner Brand Urtopia</div>
-                    <a class="text-size18 er-block er-mt-8 mb:er-text-base mb:er-mt-4" style="color: #d8d8d8;" href="https://newurtopia.com/products/urtopia-carbon-classic-ebike?variant=47235622502648">newurtopia.com<i><br>(It’s like buying a bike and getting a FREE ring!)</i></a>
+                <div class="md:er-hidden er-grid er-grid-cols-2 er-gap-4 er-mb-4">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/7.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/8.png?v=1761013018" alt="">
+                </div>
+                <div class="er-grid er-grid-cols-4 er-gap-x-[3%] mb:er-grid-cols-3 mb:er-gap-4">
+                    <img class="mb:er-hidden" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/9.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/10.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/11.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/12.png?v=1761013019" alt="">
                 </div>
             </div>
+            <div class="er-flex er-flex-col er-gap-y-12 mb:er-hidden">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/6.png?v=1761013018" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/8.png?v=1761013018" alt="">
+            </div>
         </div>
-         <div class="er-flex er-items-center er-justify-center er-mt-16 mb:er-mt-8">
-            <a target="_blank" href="https://www.kickstarter.com/projects/ldh/aivela-ring-pro-all-in-one-smart-ring-to-master-your-day" class="mb:er-w-full mb:er-py-2 mb:er-px-4 text-size20 er-font-medium er-gap-x-2 mb:er-gap-x-1 er-py-5 er-px-10 er-flex er-items-center er-justify-center er-box-border er-text-inherit er-rounded-[60px] er-no-underline" style="background-image: linear-gradient(90deg, #09CD78, #046F41);">
-            <div class="text-size30 er-font-medium mb:er-text-base er-whitespace-nowrap">Back Us On</div>
-            <img width="300" class="mb:er-max-w-40" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/kickstarter-logo-white.png?v=1756966581" alt="">
-            <svg class="mb:er-max-w-7" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#fff"><path d="M258.39-232.11 194.5-296 573-674.5H236.89v-91h491v491h-91v-336.11l-378.5 378.5Z"/></svg>
-          </a>
-         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- container_eighteen -->
@@ -1821,40 +1907,54 @@
             </div>
         </div>
     </section>
-
-<section class="er-bg-black background-image er-py-24 mb:er-py-0 er-text-white">
-    <div class="centeral-content mb:er-px-4">
-        <picture>
+  <section class="er-bg-black background-image er-px-12 er-pt-28 er-pb-20 mb:er-px-4 mb:er-py-0">
+        {% comment %} <picture>
             <source media="(min-width: 768px)"
-                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-141202.png?v=1763014344">
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/13.png?v=1761013020">
             <source media="(max-width: 768px)"
-                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140704.png?v=1763014119">
+                srcset="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/14.png?v=1761013020">
             <img src="" alt="">
-        </picture>
-        <div class="er-px-20 er-py-12 mb:er-p-8 er-rounded-[100px] mb:er-rounded-[20px]" style="box-shadow: inset 0px 0px 10px #FA3C02, 0px 3px 6px #FA6B02;">
-            <h2 class="text-size48 er-text-center er-mb-16 mb:er-text-2xl mb:er-mb-6">For Every Late Pledge Backer:</h2>
-            <div class="er-flex er-items-center er-gap-x-12 mb:er-flex-col">
-                <div class="er-place-self-start mb:er-text-center">
-                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140729.png?v=1763014119" alt="">
-                    <div class="text-size30 er-mt-6 mb:er-text-xl">Get a FREE $25 T-shirt</div>
+        </picture> {% endcomment %}
+        <div class="er-grid er-grid-cols-5 mb:er-grid-cols-2 mb:er-gap-4">
+            <img class="er-object-cover er-rounded-3xl mb:er-rounded" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/2_dfc0c028-b7a5-4d58-a358-8217eb57daf2.png?v=1761013018" loading="lazy" alt="">
+            <div class="er-col-span-3 er-px-[4%] mb:er-order-1 mb:er-px-0 mb:er-col-span-2">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/3.png?v=1761013019" loading="lazy" alt=""></img>
+            </div>
+            <img class="er-object-cover er-rounded-3xl mb:er-rounded" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/4.png?v=1761013018" loading="lazy" alt=""></img>
+        </div>
+        <div class="er-grid er-grid-cols-6 er-mt-28 er-gap-x-[2.5%] mb:er-grid-cols-1 mb:er-my-0 er-box-border">
+            <div class="er-flex er-flex-col er-gap-y-12 mb:er-hidden">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/5.png?v=1761013018" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/7.png?v=1761013018" alt="">
+            </div>
+            <div class="er-col-span-4 er-flex er-flex-col er-box-border">
+                <div class="er-box-border er-flex-1 er-text-white er-flex er-flex-col er-items-center er-justify-center er-text-center er-gap-y-4 er-translate-y-[-20%] mb:er-translate-y-0 mb:er-my-10 mb:er-gap-y-4">
+                    <h3 class="text-size36 er-font-light mb:er-text-xl">Crowdfunding Campaign Successfully Closed</h3>
+                    <div class="text-size48 mb:er-text-xl" style="background: linear-gradient(90deg, rgb(222, 35, 3), rgb(100, 53, 188), rgb(49, 109, 523));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">$835,925 Raised 5,199 Backers</div>
+                    <a class="er-box-border er-border er-border-[#09CD78] er-border-solid er-flex er-rounded-full er-items-center er-text-white er-cursor-pointer er-pr-8 mb:er-pr-4" style="text-decoration: none;" target="_blank" href="https://www.kickstarter.com/projects/ldh/aivela-ring-pro-all-in-one-smart-ring-to-master-your-day">
+                        <div class="er-box-border text-size24 er-font-light er-h-full er-py-4 er-px-6 er-rounded-full mb:er-text-sm mb:er-px-4 mb:er-py-2" style="background-image: linear-gradient(90deg, #09CD78, #046F41);scale: 1.04;">Late Pledge Available at <span class="er-font-bold">$179</span></div>
+                        <img width="250" class="er-block er-box-border er-pl-8 mb:er-max-w-36 mb:er-pl-4" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/kickstarter-logo-green.png?v=1756968805" alt="">
+                        <svg class="mb:er-max-w-4" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#09CD78"><path d="M258.39-232.11 194.5-296 573-674.5H236.89v-91h491v491h-91v-336.11l-378.5 378.5Z"></path></svg>
+                    </a> 
                 </div>
-                <img width="150" class="er-mb-40 mb:er-my-8 mb:er-max-w-24" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140721.png?v=1763014119" alt="">
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/20251113-140713.png?v=1763014119" alt="">
-                    <div class="text-size30 er-mt-6 mb:er-text-xl">Receive a $179 Coupon for Our Partner Brand Urtopia</div>
-                    <a class="text-size18 er-block er-mt-8 mb:er-text-base mb:er-mt-4" style="color: #d8d8d8;" href="https://newurtopia.com/products/urtopia-carbon-classic-ebike?variant=47235622502648">newurtopia.com<i><br>(It’s like buying a bike and getting a FREE ring!)</i></a>
+                <div class="md:er-hidden er-grid er-grid-cols-2 er-gap-4 er-mb-4">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/7.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/8.png?v=1761013018" alt="">
+                </div>
+                <div class="er-grid er-grid-cols-4 er-gap-x-[3%] mb:er-grid-cols-3 mb:er-gap-4">
+                    <img class="mb:er-hidden" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/9.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/10.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/11.png?v=1761013018" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/12.png?v=1761013019" alt="">
                 </div>
             </div>
+            <div class="er-flex er-flex-col er-gap-y-12 mb:er-hidden">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/6.png?v=1761013018" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/8.png?v=1761013018" alt="">
+            </div>
         </div>
-         <div class="er-flex er-items-center er-justify-center er-mt-16 mb:er-mt-8">
-            <a target="_blank" href="https://www.kickstarter.com/projects/ldh/aivela-ring-pro-all-in-one-smart-ring-to-master-your-day" class="mb:er-w-full mb:er-py-2 mb:er-px-4 text-size20 er-font-medium er-gap-x-2 mb:er-gap-x-1 er-py-5 er-px-10 er-flex er-items-center er-justify-center er-box-border er-text-inherit er-rounded-[60px] er-no-underline" style="background-image: linear-gradient(90deg, #09CD78, #046F41);">
-            <div class="text-size30 er-font-medium mb:er-text-base er-whitespace-nowrap">Back Us On</div>
-            <img width="300" class="mb:er-max-w-40" src="https://cdn.shopify.com/s/files/1/0925/8028/2664/files/kickstarter-logo-white.png?v=1756966581" alt="">
-            <svg class="mb:er-max-w-7" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#fff"><path d="M258.39-232.11 194.5-296 573-674.5H236.89v-91h491v491h-91v-336.11l-378.5 378.5Z"/></svg>
-          </a>
-         </div>
-    </div>
-</section>
+    </section>
+
 
     <section class="er-grid er-grid-cols-4 er-justify-evenly er-max-w-screen-xl er-gap-6 er-py-16 er-mx-auto er-text-left er-bg-black er-px-8 mb:er-px-4 mb:er-grid-cols-2 mb:er-text-left">
         <a class="er-text-white er-text-xl mb:er-text-base" href="https://www.aivela.com/pages/media-kit" target="_blank">Media Kit</a>

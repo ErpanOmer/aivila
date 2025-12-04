@@ -61,7 +61,9 @@ function subscribe(event) {
         .catch((error) => {
             console.error('请求失败:', error);
         }).finally(() => {
-            window.location.href = '/pages/buy'; // 或 replace
+            // window.location.href = '/pages/buy'; // 或 replace
+            alert('Thank you for subscribing!')
+            emailInput.value = ''
         })
 }
 
